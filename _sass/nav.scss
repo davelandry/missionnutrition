@@ -1,0 +1,70 @@
+header {
+  @include flex;
+  @include align-items(center);
+  @include justify(space-between);
+  background-color: white;
+  border-bottom: 1px solid $border;
+  height: $nav;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  #logo {
+    border: none;
+    color: $grey;
+    display: inline-block;
+    font-family: $serif;
+    font-size: 30px;
+    margin-left: 30px;
+
+    sub {
+      color: $emerald;
+      display: block;
+      font-family: $sans-serif;
+      font-size: 15px;
+      margin-top: -10px;
+    }
+
+    &:hover {
+      border: none;
+    }
+
+  }
+
+  nav {
+
+    ul {
+      display: inline-block;
+      margin-right: 20px;
+
+      li {
+        display: inline-block;
+        letter-spacing: 1px;
+        margin: 0 20px;
+
+        a {
+          border-bottom: 1px solid transparent;
+          color: $grey;
+          font-weight: 400;
+          padding-bottom: 1px;
+
+          &:hover {
+            border-color: $emerald;
+          }
+
+          &.active {
+            border-color: transparent;
+            color: $emerald;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

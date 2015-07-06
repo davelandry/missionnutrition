@@ -1,0 +1,115 @@
+main {
+  @include flex();
+  @include flex-direction(column);
+  @include justify(flex-start);
+  @include align-items(center);
+  min-height: 100vh;
+
+  section {
+    @include flex-size(1);
+    margin-top: $nav;
+
+    h1 {
+      margin: 20px auto;
+      i {
+        color: $tigerlily;
+        font-size: 40px !important;
+        margin-right: 10px;
+        margin-top: -4px;
+      }
+    }
+
+    h2 {
+      i {
+        color: $tigerlily;
+        font-size: 20px !important;
+        margin-right: 7px;
+        margin-top: 5px;
+      }
+    }
+
+    p, ul {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 20px auto;
+      max-width: 700px;
+
+      .signature {
+        display: block;
+        font-family: $serif;
+      }
+
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
+        margin-left: 35px;
+        position: relative;
+        &:before {
+          content: "\f111";
+          font-family: "FontAwesome";
+          font-size: 6px;
+          left: -20px;
+          position: absolute;
+          top: 1px;
+        }
+      }
+
+    }
+
+    .button {
+      @include transition(box-shadow 0.1s);
+      background-color: $emerald;
+      color: white;
+      display: inline-block;
+      margin-top: -2px;
+      padding: 3px 8px;
+      &:hover {
+        @include shadow;
+      }
+    }
+
+    .flexbox {
+      @include flex;
+      @include flex-wrap(wrap);
+    }
+
+    .service {
+      border: 1px solid $border;
+      margin: 20px;
+      max-width: 400px;
+      min-width: 400px;
+      padding: 20px 20px 56px;
+      position: relative;
+
+      h2 {
+        margin-bottom: 10px;
+        padding-left: 27px;
+        position: relative;
+        i {
+          margin-left: -27px;
+          position: absolute;
+        }
+      }
+
+      .button {
+        bottom: 20px;
+        position: absolute;
+        right: 20px;
+      }
+
+    }
+
+  }
+
+  footer {
+    @include flex-size(none);
+    font-size: 11px;
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+}
