@@ -4,20 +4,18 @@ header: Client Services
 image: cooking
 ---
 
-Let us meet you where you are! We meet our clients online, over the phone, and at home. We work on nights and weekends to prevent you from missing work or other important activities during the day.
+We are Registered Dietitians who specialize in:
 
-We specialize in all areas of medical nutrition therapy for men, women, children, and families, and other groups:
-
-* Weight Management/Loss
+* Weight Management and Loss
 * Performance Nutrition
-* Pre-Diabetes and Diabetes
-* Cardiac Health: High Blood Pressure, High Cholesterol
-* Pre and Post Pregnancy Nutrition
-* Gastrointestinal Health: Celiac and other concerns
-* Prevention and wellness
+* Diabetes Prevention and Management
+* Cardiac Health: High Blood Pressure and High Cholesterol
+* Prenatal Nutrition: Healthy Weight Gain
+* Childhood, Adolescent and Family Nutrition
+* Gastrointestinal Health: Celiac Disease and other concerns
+* General Wellness
 
-Click below to learn the different ways we can help meet your health goals! All services are available to customize for Group Service and Worksite Wellness, just ask!
+All services are available to customize for groups and worksites, just ask!
 
 {% include services.html %}
 
-Note: There may be additional fees for those residing outside the Greater Boston Area. Clients must complete an [Initial Assessment](/services/initial/) visit first to utilize home visit option.
