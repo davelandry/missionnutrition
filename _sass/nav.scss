@@ -2,6 +2,7 @@ header {
   @include flex;
   @include align-items(center);
   @include justify(space-between);
+  @include shadow();
   background-color: white;
   border-bottom: 1px solid $border;
   height: $nav;
@@ -9,7 +10,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
 
   #logo {
     border: none;
@@ -18,13 +19,10 @@ header {
     font-family: $serif;
     font-size: 30px;
     margin-left: 30px;
+    width: 200px;
 
-    sub {
-      color: $emerald;
-      display: block;
-      font-family: $sans-serif;
-      font-size: 15px;
-      margin-top: -10px;
+    img {
+      width: 100%;
     }
 
     &:hover {
@@ -41,22 +39,23 @@ header {
 
       li {
         display: inline-block;
-        letter-spacing: 1px;
-        margin: 0 20px;
+        letter-spacing: 2px;
+        margin: 20px 20px 0;
+        text-transform: uppercase;
 
         a {
-          border-bottom: 1px solid transparent;
+          border-bottom: 2px solid transparent;
           color: $grey;
-          font-weight: 400;
-          padding-bottom: 1px;
+          font-weight: 600;
+          padding-bottom: 2px;
 
           &:hover {
-            border-color: $emerald;
+            border-color: $tigerlily;
           }
 
           &.active {
             border-color: transparent;
-            color: $emerald;
+            color: $tigerlily;
           }
 
         }

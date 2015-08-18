@@ -13,13 +13,13 @@ body {
 }
 
 a {
-  @include transition(border-color 0.1s);
+  @include transition(border-color 0.25s);
   border-bottom: 1px solid transparent;
-  color: $emerald;
+  color: $tigerlily;
   text-decoration: none;
 
   &:hover {
-    border-color: $emerald;
+    border-color: $tigerlily;
     &.active {
       cursor: pointer;
     }

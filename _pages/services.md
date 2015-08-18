@@ -1,7 +1,8 @@
 ---
 title: Services
 header: Client Services
-image: cooking
+image: limes
+layout: services
 ---
 
 We are Registered Dietitians who specialize in:
@@ -13,6 +14,3 @@ We are Registered Dietitians who specialize in:
 * Gastrointestinal Health: Celiac Disease and other concerns
 
 All services are available to customize for groups and worksites, just ask!
-
-{% include services.html %}
-
