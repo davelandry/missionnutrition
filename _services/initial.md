@@ -1,7 +1,7 @@
 ---
 title: Initial Assessment & Goals Session
 icon: play-circle
-description: An Initial Assessment and Goals Session is conducted online or over the telephone for 60 Minutes. During your session, your Registered Dietitian will spend time building an effective plan and recommendations for you. This session aims to discover What, Where, When and with Whom (and maybe Why!) you eat.
+description: An Initial Assessment and Goals Session is conducted online or over the telephone for 60 Minutes. During your session, your Registered Dietitian will build an effective plan and recommendations with you. This session aims to discover What, Where, When and with Whom (and maybe Why!) you eat.
 order: 1
 ---
 
