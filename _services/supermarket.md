@@ -1,7 +1,7 @@
 ---
-title: Supermarket Tour
+title: Family Nutrition Assessment
 icon: shopping-cart
-description: Often we work with clients who are frustrated with the overwhelming amount of products to sort through at the grocery store. Our Supermarket Tour may occur after your Initial Assessment and Goals Session.
+description: If health is important to the people in your family, but parents, teens, and kids aren't seeing eye-to-eye about how to get started, a Family Nutrition Assessment helps discover new ways to reach everyone's health goals. We'll meet with at least one parent and one child (or more members if they are available) from your family. Each member of your family will practice individual changes that come together to support one another in reaching their nutrition goals. Typical topics reviewed include picky eating, finding time to prepare food, and balancing conflicting nutrition needs among family members.
 order: 6
 ---
 
