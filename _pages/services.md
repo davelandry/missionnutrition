@@ -8,7 +8,7 @@ layout: services
 We are Registered Dietitians who specialize in:
 
 * Weight Loss and Management
-* Diabetes, High Blood Pressure, and High Cholesterol: Prevention and Nutrition Care
+* Diabetes, High Blood Pressure, and High Cholesterol
 * Prenatal Nutrition: Healthy Weight Gain
 * Childhood, Adolescent and Family Nutrition
 * Gastrointestinal Health: Celiac Disease and other concerns
