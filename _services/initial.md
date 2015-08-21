@@ -1,7 +1,7 @@
 ---
 title: Initial Assessment & Goals Session
 icon: play-circle
-description: An Initial Assessment and Goals Session is conducted online or over the phone for 60 minutes. During your session, we will build an effective plan by discovering what, where, when, with whom, and why you eat. You'll leave with a clear plan to reach your health and nutrition goals. Many people continue with weekly [Follow-Up Counseling and Coaching](/services/followup/) or our [Food Diary Feedback](/services/diary/) program with best success in staying on track.
+description: An Initial Assessment and Goals Session is conducted online or over the phone for 60 minutes. During your session, we will build an effective plan by discovering what, where, when, with whom, and why you eat. You'll leave with a clear plan to reach your health and nutrition goals.
 order: 1
 ---
 
