@@ -1,7 +1,7 @@
 ---
 title: Home Pantry Cleanout
 icon: home
-description: Our most successful clients have transformed their eating spaces to ensure the only choice is the healthy choice. Home Pantry Cleanout is conducted in your home (preferred) or virtually after you’ve completed an Initial Assessment and Goals Session with your Registered Dietitian.
+description: Our most successful clients have transformed their eating spaces to ensure the only choice is the healthy choice. Home Pantry Cleanout is conducted virtually after you’ve completed an Initial Assessment and Goals Session. You'll better understand your home food environment, including strengths, opportunities, and triggers for eating behaviors. We can create a tailored action plan to modify your pantry today!
 order: 4
 ---
 
