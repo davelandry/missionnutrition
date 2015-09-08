@@ -1,6 +1,6 @@
 ---
-title: Resources
-header: Resources
+title: Blog
+header: Blog
 image: greenbeans
 ---
 
