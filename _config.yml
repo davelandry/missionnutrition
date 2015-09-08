@@ -2,17 +2,10 @@ collections:
   pages:
     output: true
     permalink: /:path/
-  services:
-    output: true
-    permalink: /services/:path/
 
 defaults:
   - scope:
       type: pages
     values:
       layout: default
-  - scope:
-      type: services
-    values:
-      layout: service
       image: limes

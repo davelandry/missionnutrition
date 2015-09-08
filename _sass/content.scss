@@ -13,72 +13,66 @@ main {
     margin: $nav 0 50px;
     padding: 50px 60px 40px;
     z-index: 10;
+  }
 
-    h1 {
-      font-size: 40px;
-      font-weight: 400;
-      letter-spacing: 2px;
-      margin: 0 auto 20px;
-      text-transform: uppercase;
+  h1 {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0 auto 20px;
+    text-transform: uppercase;
 
-      i {
-        color: $tigerlily;
-        font-size: 40px !important;
-        margin-right: 15px;
-        margin-top: 4px;
-      }
+    i {
+      color: $tigerlily;
+      font-size: 40px !important;
+      margin-right: 15px;
+      margin-top: 4px;
+    }
+  }
+
+  p, ul, ol {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 20px auto;
+    max-width: 550px;
+
+    &.center {
+      text-align: center;
     }
 
-    p, ul, ol {
-      font-size: 18px;
-      line-height: 28px;
-      margin: 20px auto;
-      max-width: 550px;
-
-      .signature {
-        display: block;
-        font-family: $serif;
-        font-size: 20px;
-      }
-
+    &.right {
+      text-align: right;
     }
 
-    ol, ul {
+  }
 
-      li {
-        margin-left: 35px;
-      }
+  ol, ul {
 
+    li {
+      margin-left: 35px;
     }
 
-    ul {
-      list-style-type: none;
+  }
 
-      li {
-        position: relative;
-        &:before {
-          content: "\f111";
-          font-family: "FontAwesome";
-          font-size: 6px;
-          left: -20px;
-          position: absolute;
-          top: 1px;
-        }
+  ul {
+    list-style-type: none;
+
+    li {
+      position: relative;
+      &:before {
+        content: "\f111";
+        font-family: "FontAwesome";
+        font-size: 6px;
+        left: -20px;
+        position: absolute;
+        top: 1px;
       }
-
     }
 
   }
 
   h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    i {
-      color: $mimosa;
-      font-size: 30px !important;
-      margin-right: 15px;
-      margin-top: 5px;
-    }
+    font-size: 22px;
   }
 
   .button {
@@ -86,7 +80,7 @@ main {
     background-color: $tigerlily;
     color: white;
     display: inline-block;
-    margin-top: -2px;
+    margin: 0 5px;
     padding: 5px 8px;
     &:hover {
       @include shadow;
@@ -105,24 +99,27 @@ main {
     margin: 20px;
     max-width: 400px;
     min-width: 400px;
-    padding: 20px 20px 65px;
+    padding: 20px 20px 80px;
     position: relative;
 
-    h2 {
-      margin-bottom: 20px;
-      padding-left: 38px;
-      position: relative;
+    .title {
+      @include flex;
+      @include flex-direction(row);
+      @include justify(flex-start);
+      @include align-items(center);
+
       i {
-        margin-left: -38px;
-        margin-top: -3px;
-        position: absolute;
+        color: $mimosa;
+        font-size: 30px !important;
+        margin: 0 15px 0 10px;
       }
+
     }
 
-    .button {
-      bottom: 20px;
+    p.bottom {
+      bottom: 0;
       position: absolute;
-      right: 20px;
+      right: 15px;
     }
 
   }

@@ -9,9 +9,14 @@ layout: default
   {% assign services = site.services | sort:"order" %}
   {% for service in services %}
   <div class="service">
-    <h2>{% if service.icon %}<i class="fa fa-{{ service.icon }}"></i>{% endif %}{{ service.title }}</h2>
-    {{ service.description }}<br>
-    <a class="button" href="{{ service.url }}">Learn More</a>
+    <div class="title">
+      {% if service.icon %}<i class="fa fa-{{ service.icon }}"></i>{% endif %}
+      <h2>{{ service.title }}</h2>
+    </div>
+    {{ service.content | markdownify }}
+    <p class="right bottom">
+      <a class="button" href="/appointments/">Book Now</a>
+    </p>
   </div>
   {% endfor %}
 </div>
