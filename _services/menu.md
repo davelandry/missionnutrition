@@ -12,4 +12,4 @@ Does the question “What’s for Dinner?” feel like a overwhelming thing to a
 * Making grocery lists with the RIGHT amount of food for everyone eating in your home
 * Support with menu planning: recieve templates to get you started and learn how to plan on your own.
 
-You will leave feeling "ready to rock" in your kitchen with routines tailored to you (including a starter two weeks of menu plans and instructions with corresponding grocery lists.) Many people find that the [Pantry Cleanout](/services/pantry/) and [Supermarket Tour](/services/supermarket/) pair nicely with this service for a total transformation in their kitchens!
+You will leave feeling "ready to rock" in your kitchen with routines tailored to you (including a starter two weeks of menu plans and instructions with corresponding grocery lists.) Many people find that the [Pantry Cleanout](/services/pantry/) and [Family Nutrition Assessment](/services/family/) pair nicely with this service for a total transformation in their kitchens!

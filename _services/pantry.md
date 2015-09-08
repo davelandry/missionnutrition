@@ -11,4 +11,4 @@ Our most successful clients have transformed their eating spaces to ensure the o
 * Develop recommendations for a food environment better aligned with your health goals
 * Create a tailored action plan to modify your pantry today!
 
-After this session, your home will match your diet plan. To reinforce this experience, many people find that the [Supermarket Tour](/services/supermarket/) and [Follow-Up Coaching Counseling](/services/followup/) pair nicely with this service to maintain your new and improved home pantry space!
+After this session, your home will match your diet plan. To reinforce this experience, many people find that the [Family Nutrition Assessment](/services/family/) and [Follow-Up Coaching Counseling](/services/followup/) pair nicely with this service to maintain your new and improved home pantry space!
