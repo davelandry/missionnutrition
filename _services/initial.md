@@ -4,7 +4,7 @@ icon: play-circle
 order: 1
 ---
 
-A solid mission starts with a road map. During your initial session, we will:
+Your mission starts with a road map. During your initial session, we will:
 
 * Learn about your eating habits: what, where, when, with whom, and why you eat
 * Decide on an effective eating plan to meet your health goals
