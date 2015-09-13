@@ -4,7 +4,7 @@ icon: users
 order: 2
 ---
 
-Are you unsure where to start with your family's eating? We can help discover new ways to reach everyone's health goals. This session is similar to our Individual Nutrition Assessment and Goal Session but extends to 90 minutes to include:
+This session is similar to our Individual Nutrition Assessment and Goal Session but extends to 90 minutes to include:
 
 * Full Family Assessment: Understanding individual needs and routines that impact change
 * Meeting with at least one parent and one child (or more family members if they are available) 
