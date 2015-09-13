@@ -7,8 +7,7 @@ layout: services
 
 We are Registered Dietitians who specialize in online and telephone delivery of services related to:
 
-* Weight Loss and Management
+* Weight Loss, Management, and Prevention: Individual, small-group, child, teen, and family.
 * Pre-Diabetes, Diabetes, and Heart Health
-* Prenatal Nutrition: Healthy Eating for Moms-to-Be
-* Childhood, Adolescent, and Family Nutrition
+* Pregnancy Nutrition: Healthy Eating for Moms-to-Be
 * Gastrointestinal Issues, Celiac Disease, and Gluten-Free Diets
