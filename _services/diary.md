@@ -1,7 +1,7 @@
 ---
 title: Food Diary Feedback Service
 icon: book
-order: 2
+order: 4
 ---
 
 If you're simply looking for quick, expert guidance about what to "do" to change your eating, this service is for you! Complete a one-time 15 minute phone call where we will teach you to effectively keep Food Diaries and learn your nutrition goals. Then, begin effectively keeping track of what you are eating and drinking to receive:
