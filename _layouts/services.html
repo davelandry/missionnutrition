@@ -11,10 +11,10 @@ layout: base
 
 </section>
 
-<div class="flexbox">
+<!-- <div class="flexbox"> -->
   {% assign services = site.services | sort:"order" %}
   {% for service in services %}
-  <div class="service">
+  <section class="service">
     <div class="title">
       {% if service.icon %}<i class="fa fa-{{ service.icon }}"></i>{% endif %}
       <h2>{{ service.title }}</h2>
@@ -23,6 +23,6 @@ layout: base
     <p class="right bottom">
       <a class="button" href="/appointments/">Book Now</a>
     </p>
-  </div>
+  </section>
   {% endfor %}
-</div>
+<!-- </div> -->

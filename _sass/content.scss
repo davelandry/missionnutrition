@@ -12,6 +12,7 @@ main {
     background-color: white;
     margin: $nav 0 50px;
     padding: 50px 60px 40px;
+    position: relative;
     z-index: 10;
   }
 
@@ -139,20 +140,16 @@ main {
   }
 
   .service {
-    @include shadow();
-    background-color: white;
-    border: 1px solid $border;
-    margin: 20px;
-    max-width: 400px;
-    min-width: 400px;
-    padding: 20px 20px 60px;
-    position: relative;
+    margin: 20px auto 50px;
+    max-width: 600px;
+    padding-bottom: 60px;
 
     .title {
       @include flex;
       @include flex-direction(row);
       @include justify(flex-start);
       @include align-items(center);
+      max-width: 550px;
 
       i {
         color: $mimosa;
