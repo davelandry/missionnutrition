@@ -21,10 +21,18 @@ main {
     background-color: white;
     margin: $nav 50px 50px;
     padding: 50px 60px 40px;
+    width: 200px;
     z-index: 10;
 
     ul {
       margin: 0;
+    }
+
+    .instansive-widget {
+      width: 100%;
+      border: 0;
+      margin: 10px 0; 
+      overflow: hidden;
     }
 
   }
