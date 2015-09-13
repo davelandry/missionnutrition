@@ -4,4 +4,10 @@ icon: play-circle
 order: 1
 ---
 
-An Initial Assessment and Goals Session is conducted online or over the phone for 60 minutes. During your session, we will build an effective plan by discovering what, where, when, with whom, and why you eat. You'll leave with a clear plan to reach your health and nutrition goals.
+Conducted online or over the phone for 60 minutes. During your session, we will:
+
+*Learn about your eating habits: what, where, when, with whom, and why you eat
+*Decide on an Eating Plan to meet your unique healthy goals
+*Provide tailored education and counseling to help you get started
+
+Follow-up sessions, Food Diary Feedback Service, or Membership are recommended for ongoing accountability and support.
