@@ -4,7 +4,7 @@ icon: comments
 order: 5
 ---
 
-Follow-Up Counseling and Coaching is conducted online or over the telephone after an Initial or Family Assessment and Goals Session is completed. This time is dedicated to:
+Follow-Up sessions occur after an Initial or Family Assessment and Goals Session is completed. You may select 30 or 60 minute sessions, based on your needs. This time is dedicated to:
 
 * Progress Check-Ins: Overcome "hang ups", stay accountable, and measure success
 * Menu Planning: Work with your RD to develop custom, easy-to-follow "roadmaps"
