@@ -1,7 +1,7 @@
 ---
 title: Family Nutrition Assessment and Goals Session
 icon: users
-order: 6
+order: 2
 ---
 
 Are you unsure where to start with your family's eating? We can help discover new ways to reach everyone's health goals. This session is similar to our Individual Nutrition Assessment and Goal Session but extends to 90 minutes to include:
