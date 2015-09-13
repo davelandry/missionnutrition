@@ -1,0 +1,31 @@
+---
+layout: base
+---
+<div class="flexbox">
+
+  <section>
+
+    {% if page.header %}
+    <h1 id="header">{{ page.header }}</h1>
+    {% endif %}
+
+    {{ content }}
+
+  </section>
+
+  <aside>
+    <ul><h3>Archive</h3>
+      {% for post in site.posts %}
+        <li>
+          {% if post.url == page.url %}
+            {{ post.title }}
+          {% else %}
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          {% endif %}
+          <sub>{{ post.date | date: '%B %d, %Y' }}</sub>
+        </li>
+      {% endfor %}
+    </ul>
+  </aside>
+
+</div>

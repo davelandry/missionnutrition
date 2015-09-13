@@ -1,0 +1,10 @@
+---
+layout: blog
+---
+
+<h1 id="header">
+  {{ page.title }}
+  <sub>{{ page.date | date: '%B %d, %Y' }}{% if page.author %} - written by {{ page.author }}{% endif %}</sub>
+</h1>
+
+{{ content }}

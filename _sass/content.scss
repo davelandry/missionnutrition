@@ -15,6 +15,19 @@ main {
     z-index: 10;
   }
 
+  aside {
+    @include shadow();
+    background-color: white;
+    margin: $nav 50px 50px;
+    padding: 50px 60px 40px;
+    z-index: 10;
+
+    ul {
+      margin: 0;
+    }
+
+  }
+
   h1 {
     font-size: 40px;
     font-weight: 400;
@@ -28,6 +41,38 @@ main {
       margin-right: 15px;
       margin-top: 4px;
     }
+
+    sub {
+      margin-top: 5px;
+    }
+
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    sub {
+      margin-top: 5px;
+    }
+
+  }
+
+  h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+
+    sub {
+      margin-top: 5px;
+    }
+
+  }
+
+  sub {
+    color: #888;
+    display: block;
+    font-size: 12px;
   }
 
   p, ul, ol {
@@ -50,6 +95,11 @@ main {
 
     li {
       margin-left: 35px;
+
+      sub {
+        margin-top: -5px;
+      }
+
     }
 
   }
@@ -69,10 +119,6 @@ main {
       }
     }
 
-  }
-
-  h2 {
-    font-size: 22px;
   }
 
   .button {
