@@ -4,8 +4,8 @@ icon: comments
 order: 3
 ---
 
-Occur after an Initial or Family Assessment and Goals Session is completed. You may select 30 or 60 minute sessions, based on your needs. This time is dedicated to:
+After an Initial Assessment & Goals Session you may select 30 or 60 minute follow-up visits, based on your needs. This time is dedicated to:
 
 * Progress Check-Ins: Overcome "hang ups", stay accountable to goals, and measure success
-* Menu Planning: Work with your RD to develop custom, easy-to-follow menus
-* Home Pantry Cleanout: Remove triggers for undesired eating behaviors
+* Menu Planning: Develop and learn to follow easy-to-follow menus
+* Home Pantry Cleanout: Home Analysis and Feedback 
