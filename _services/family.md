@@ -1,10 +1,10 @@
 ---
-title: Family Nutrition Assessment and Goals Session
+title: Family Nutrition: Starter Session
 icon: users
 order: 2
 ---
 
-This extended, 90 minute Assessment and Goals Session includes:
+This 90 minute Family Nutrition Assessment and Goals Session includes:
 
 * Full Family Assessment: Understanding individual needs and routines that impact change
 * Meeting with at least one parent and one child (or more family members if they are available) 
