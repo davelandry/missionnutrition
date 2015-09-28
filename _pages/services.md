@@ -12,6 +12,6 @@ Our services can support you in following nutrition areas:
 * Pregnancy Nutrition: Healthy Eating for Moms-to-Be
 * Gastrointestinal Issues, Celiac Disease, and Gluten-Free Diets
 
-To start, recieve a customized nutrition plan for yourself or your family during an Initial Assessment and Goals Session.
+Start with an Initial Assessment and Goals Session to get a customized eating plan for you or your family. 
 
-For ongoing coaching and support (and best success!) book Follow-Up Sessions, Food Diary Feedback Service, or monthly memberships.
+Continue with ongoing coaching and change support through Follow-Up Sessions, Food Diary Feedback Service, or monthly Memberships. Your Registered Dieitian can help design a plan that works best for you!
