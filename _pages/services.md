@@ -5,7 +5,7 @@ image: limes
 layout: services
 ---
 
-We are Registered Dietitians who specialize in online and telephone delivery of services related to:
+Our services can support you in following nutrition areas: 
 
 * Weight Loss and Management: Adult, Teen, and Child
 * Pre-Diabetes, Diabetes, and Heart Health
