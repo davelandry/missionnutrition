@@ -4,4 +4,4 @@ header: Appointments
 image: strawberries
 ---
 
-Coming Soon
+https://clients.mindbodyonline.com/classic/ws?studioid=260796&stype=-9&sView=day
