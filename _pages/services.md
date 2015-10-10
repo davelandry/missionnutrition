@@ -5,16 +5,16 @@ image: limes
 layout: services
 ---
 
-We design customized plans to support you in the following nutrition areas: 
+We design customized plans to support your best health: 
 
 * Weight Loss and Management: Adults, Teens, and Children
 * Pre-Diabetes, Diabetes, and Heart Health
 * Pregnancy Nutrition: Healthy Eating for Moms-to-Be
 * Gluten-Free Diets for Celiac Disease
 
-<i class="fa fa-playcircle"> </i>Start with an Initial Assessment and Goals Session to get a customized eating plan for you or your family.
+<i class="fa fa-play-circle"> </i>Start with an Initial Assessment and Goals Session to build a plan for you or your family.
 
-Continue with ongoing coaching and change support through:<br>
+Continue with ongoing coaching support through:<br>
 
 <i class="fa fa-comments"> </i> Follow-Up Sessions<br>
 <i class="fa fa-book"> </i> Food Diary Feedback Service <br>
