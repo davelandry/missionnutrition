@@ -5,7 +5,7 @@ image: limes
 layout: services
 ---
 
-We design customized plans to support you in following nutrition areas: 
+We design customized plans to support with: 
 
 * Weight Loss and Management: Adult, Teen, and Child
 * Pre-Diabetes, Diabetes, and Heart Health
