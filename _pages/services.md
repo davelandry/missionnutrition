@@ -13,7 +13,5 @@ We design customized plans to support your best health:
 * Gluten-Free Diets for Celiac Disease
 
 Start with an <i class="fa fa-play-circle"> </i> Initial Assessment and Goals Session to build a plan for you or your family.
-
-Continue with ongoing coaching support through:
-<i class="fa fa-comments"> </i>Follow-Up Sessions,<i class="fa fa-book"> </i>Food Diary Feedback Service, or Monthly
-<i class="fa fa-calendar"> </i>Memberships.
+<center><i class="fa fa-comments"></i><i class="fa fa-book"> </i><i class="fa fa-calendar"> </center></i> <br>
+Continue with ongoing coaching support with Follow-Up Sessions, Food Diary Feedback Service, or Monthly Memberships.
