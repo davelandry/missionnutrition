@@ -22,7 +22,7 @@
     <script src="/js/d3.v3.min.js"></script>
 
   </head>
-  <body>
+  <body class="{{ page.title }}">
 
     <header>
 
@@ -33,6 +33,11 @@
       <nav>
         <ul>
           <li>
+            <a {% if page.title == 'How it Works' %}class="active"{% else %}href="/howitworks/"{% endif %}>
+              How it Works
+            </a>
+          </li>
+          <li>
             <a {% if page.title == 'Services' %}class="active"{% else %}href="/services/"{% endif %}>
               Services
             </a>
@@ -40,11 +45,6 @@
           <li>
             <a {% if page.title == 'Appointments' %}class="active"{% else %}href="/appointments/"{% endif %}>
               Appointments
-            </a>
-          </li>
-          <li>
-            <a {% if page.title == 'Blog' %}class="active"{% else %}href="/blog/"{% endif %}>
-              Blog
             </a>
           </li>
           <li>
