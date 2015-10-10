@@ -12,9 +12,9 @@ We design customized plans to support you in following nutrition areas:
 * Pregnancy Nutrition: Healthy Eating for Moms-to-Be
 * Gastrointestinal Issues, Celiac Disease, and Gluten-Free Diets
 
-<p><img src="playcircle"></img>Start with an Initial Assessment and Goals Session to get a customized eating plan for you or your family. </p>
+<p><img src="playcircle"> </img>Start with an Initial Assessment and Goals Session to get a customized eating plan for you or your family. </p>
 
 Continue with ongoing coaching and change support through:
-<p><img src=""></img>Follow-Up Sessions</p>
-<p><img src="">Food Diary Feedback Service</p>
-<p><img src="">Memberships that include both types of support with 10% off for your commitment to you!</p>
+<p><img src="comments"> </img>Follow-Up Sessions</p>
+<p><img src="book"> </img>Food Diary Feedback Service</p>
+<p><img src="calendar"> </img>Memberships that include both types of support with 10% off for your commitment to you!</p>
