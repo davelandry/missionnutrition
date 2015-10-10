@@ -16,6 +16,6 @@ We design customized plans to support your best health:
 
 Continue with ongoing coaching support through:<br>
 
-<i class="fa fa-comments"> </i> Follow-Up Sessions<br>
-<i class="fa fa-book"> </i> Food Diary Feedback Service <br>
-<i class="fa fa-calendar"> </i> Memberships that include both types of support with 10% off for your commitment to you!
+<center><i class="fa fa-comments"> </i>    Follow-Up Sessions</center><br>
+<center><i class="fa fa-book"> </i>    Food Diary Feedback Service </center><br>
+<center><i class="fa fa-calendar"> </i>    Memberships </center>
