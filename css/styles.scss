@@ -18,6 +18,11 @@ a {
   color: $tigerlily;
   text-decoration: none;
 
+  &.anchor {
+    position: relative;
+    top: -100px;
+  }
+
   &.right {
     float: right;
   }
@@ -32,6 +37,23 @@ a {
   i {
     font-size: 11px !important;
     margin-top: 5px;
+  }
+
+  &.social {
+    @include transition(color 0.1s);
+    color: $grey;
+    display: inline-block;
+
+    i {
+      font-size: 18px !important;
+      margin: 0 5px;
+    }
+
+    &:hover {
+      border-color: transparent;
+      color: $tigerlily;
+    }
+
   }
 
 }

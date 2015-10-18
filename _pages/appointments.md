@@ -4,4 +4,7 @@ header: Appointments
 image: strawberries
 ---
 
-<iframe src="https://clients.mindbodyonline.com/classic/ws?studioid=260796&stype=-9" width="1000" height="600">
+<p class="center">
+<a class="button" target="_blank" href="https://clients.mindbodyonline.com/classic/home?studioid=260796">Book Now</a>
+<a class="button" target="_blank" href="https://www.zoom.us/join">Enter my Appointment</a>
+</p>
