@@ -9,7 +9,12 @@
   margin: 0 50px;
   width: 300px;
 
-  h2 {
+  h3 {
+    text-align: center;
+  }
+
+  h4 {
+    color: $emerald;
     text-align: center;
   }
 
@@ -19,6 +24,10 @@
     height: 150px;
     margin: 10px auto;
     width: 150px;
+  }
+
+  .social > i {
+    margin: 5px !important;
   }
 
 }
