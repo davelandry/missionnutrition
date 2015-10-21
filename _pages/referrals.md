@@ -4,7 +4,7 @@ header: Referrals
 image: chard
 ---
 
-One of the best parts of working in healthcare is collaborating with like-minded, caring professionals like you. At Mission Nutrition, we bring excellent nutrition care to our clients in the comfort of their homes through secure online video conferencing. 
+One of the best parts of working in healthcare is collaborating with like-minded, caring professionals like you. At Mission Nutrition, we bring excellent nutrition care to our clients in the comfort of their homes through secure online video conferencing.
 
 <strong>Who You Should Refer to Us:</strong> Any clients or patients needing support in nutrition and diet improvement.
 
@@ -14,4 +14,4 @@ One of the best parts of working in healthcare is collaborating with like-minded
 
 <strong>Preferred Care Delivery Hours</strong>: We know people are busier than ever. As a result, follow-up on referrals for in-office treatments are difficult to establish. Our online service is delivered exclusively during evening and weekend hours. As a result of our efficient process, patients are free to spend more time focusing their energy on themselves instead of the frustrating aspects of accessing care: commuting, limited hours, parking, and managing time-off from work or school.
 
-If you are interested in connecting your patients to us, please Contact Us today! We are happy to send marketing materials or learn more about how we can better serve your practice. 
+If you are interested in connecting your patients to us, please [Contact Us](/contact/) today! We are happy to send marketing materials or learn more about how we can better serve your practice. 

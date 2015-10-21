@@ -11,7 +11,7 @@
   width: 100vw;
 
   img {
-    @include blur(2);
+    @include blur(5);
     left: -5px;
     opacity: 1;
     position: absolute;
