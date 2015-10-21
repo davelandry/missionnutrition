@@ -13,4 +13,5 @@ We have unique background in nutrition, education, and communications. Contact u
 <li> Worksite wellness consulting </li>
 <li> Presentations and public speaking </li>
 <li> Training or in-services for professionals </li>
+<li> Marketing for nutrition services or products </li>
 </ul> 
