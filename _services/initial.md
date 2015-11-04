@@ -10,3 +10,7 @@ Your mission starts with a road map. During this 60 minute (individual) or 90 mi
 * Build an effective eating plan to meet your health goals
 * Provide education and counseling to help you get started
 * For families, discuss how to overcome issues that impact families most: picky eating, finding time to prepare food, and avoiding arguing over healthy eating habits.
+
+| Individual | Family |
+|---|---|
+| $110 | $150 |

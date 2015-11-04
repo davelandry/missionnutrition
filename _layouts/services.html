@@ -21,12 +21,13 @@ layout: base
       <h2>{{ service.title }}</h2>
     </div>
     {{ service.content | markdownify }}
-    <p class="right bottom">
+    <p class="center">
       {% if service.url == "/services/corporate.html" %}
       <a class="button" href="/contact/">Contact Us</a>
       {% else %}
       <a target="_blank" class="button" href="https://clients.mindbodyonline.com/classic/home?studioid=260796">Book Now</a>
       {% endif %}
+      {% if service.example %}<br /><br /><a target="_blank" href="{{ service.example }}">View Session Summary Example</a>{% endif %}
     </p>
   </section>
   {% endfor %}

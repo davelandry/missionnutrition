@@ -2,6 +2,7 @@
 title: Follow-Up Sessions
 icon: comments
 order: 2
+example: /examples/followup.pdf
 ---
 
 After an Initial Assessment & Goals Session you may select 30 or 60 minute follow-up visits, based on your needs. This time is dedicated to:
@@ -9,3 +10,8 @@ After an Initial Assessment & Goals Session you may select 30 or 60 minute follo
 * Progress Check-Ins: Overcome "hang ups", stay accountable to goals, and measure success
 * Menu Planning: Develop and learn how to follow easy recipes
 * Home Pantry Cleanout: Home Analysis and Feedback
+
+| 30 minute | 60 minute |
+|---|---|
+| $60/single | $110/single |
+| $360/6-pack | $660/6-pack |

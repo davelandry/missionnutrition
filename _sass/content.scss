@@ -6,9 +6,20 @@
 
 .bio {
   display: inline-block;
-  margin-right: 50px;
-  text-align: justify;
-  width: 325px;
+  font-size: 13px;
+  line-height: 18px;
+  margin-right: 100px;
+  // text-align: justify;
+  width: 350px;
+
+  ul {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 5px 0 25px;
+    li {
+      margin: 5px 35px;
+    }
+  }
 
   &:last-child {
     margin-right: 0;
@@ -31,8 +42,10 @@
     width: 150px;
   }
 
-  .social > i {
-    margin: 5px !important;
+  .social {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
   }
 
 }
@@ -234,7 +247,7 @@ main {
   .service {
     margin: 20px auto 50px;
     max-width: 600px;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
 
     .title {
       @include flex;
@@ -253,10 +266,26 @@ main {
 
     }
 
-    p.bottom {
-      bottom: 0;
-      position: absolute;
-      right: 15px;
+  }
+
+  table {
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 250px;
+
+    th, td {
+      border-right: 1px solid #ccc;
+      padding: 3px 5px;
+      text-align: center;
+
+      &:last-child {
+        border-right: 0;
+      }
+
+    }
+
+    th {
+      border-bottom: 1px solid #ccc;
     }
 
   }
@@ -265,7 +294,7 @@ main {
     @include flex-size(none);
     font-size: 12px;
     line-height: 18px;
-    margin: 25px 0 40px;
+    margin: 0 0 40px;
     text-align: center;
     width: 100%;
     a {

@@ -4,14 +4,13 @@ icon: briefcase
 order: 5
 ---
 
-We have unique background in nutrition, education, and communications. Contact us if you are interested in:
-<ul>
-<li> Design or delivery of nutrition-related programs </li>
-<li> Selection or design of nutrition education materials </li>
-<li> Menu and recipe development </li>
-<li> Communications: interviews, blogs, and newsletters </li>
-<li> Worksite wellness consulting </li>
-<li> Presentations and public speaking </li>
-<li> Training or in-services for professionals </li>
-<li> Marketing for nutrition services or products </li>
-</ul> 
+We have unique background in nutrition, education, and communications. [Contact us](/contact/) if you are interested in:
+
+* Design or delivery of nutrition-related programs
+* Selection or design of nutrition education materials
+* Menu and recipe development
+* Communications: interviews, blogs, and newsletters
+* Worksite wellness consulting
+* Presentations and public speaking
+* Training or in-services for professionals
+* Marketing for nutrition services or products
