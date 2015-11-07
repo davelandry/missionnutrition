@@ -2,7 +2,7 @@
 title: Follow-Up Sessions
 icon: comments
 order: 2
-example: /examples/followup.pdf
+example: followup
 ---
 
 After an Initial Assessment & Goals Session you may select 30 or 60 minute follow-up visits, based on your needs. This time is dedicated to:

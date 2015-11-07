@@ -2,7 +2,7 @@
 title: Initial Assessment & Goals Session
 icon: play-circle
 order: 1
-example: /examples/followup.pdf
+example: followup
 ---
 
 Your mission starts with a road map. During this 60 minute (individual) or 90 minute (family) session, we will:

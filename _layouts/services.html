@@ -27,7 +27,7 @@ layout: base
       {% else %}
       <a target="_blank" class="button" href="https://clients.mindbodyonline.com/classic/home?studioid=260796">Book Now</a>
       {% endif %}
-      {% if service.example %}<br /><br /><a target="_blank" href="{{ service.example }}">View Session Summary Example</a>{% endif %}
+      {% if service.example %}<br /><br /><a href="/examples/{{ service.example }}.jpg" data-featherlight="image">View Session Summary Example</a>{% endif %}
     </p>
   </section>
   {% endfor %}

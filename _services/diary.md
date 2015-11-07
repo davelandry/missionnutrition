@@ -2,7 +2,7 @@
 title: Food Diary Feedback Service
 icon: book
 order: 3
-example: /examples/diary.png
+example: diary
 ---
 
 Get quick, expert guidance about how to change your eating via e-mail. Complete a one-time 15 minute phone call where you will learn to effectively keep Food Diaries for your specific nutrition goals. Then, begin keeping track of what you are eating and drinking to receive:
