@@ -2,6 +2,7 @@
 title: Contact
 header: Contact Us
 image: chard
+description: Contact us for a free 10 minute consultation!
 ---
 
 To learn more about working with us, reach out! We are happy to provide free 10 minute consultations to decide if our services are right for you.

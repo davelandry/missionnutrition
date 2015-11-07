@@ -3,6 +3,7 @@ title: Services
 header: Client Services
 image: limes
 layout: services
+description: See our innovative individual and corporate services.
 ---
 
 We design customized plans to support:

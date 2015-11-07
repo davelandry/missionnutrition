@@ -2,6 +2,7 @@
 title: How it Works
 header: How it Works
 image: chard
+description: Explore how easy it is to access our online nutrition services.
 ---
 
 Working with us is easy:
