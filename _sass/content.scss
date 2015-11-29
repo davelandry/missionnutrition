@@ -9,6 +9,14 @@
   text-align: center;
 }
 
+.cursive {
+  color: #ccc;
+  font-family: "Pacifico";
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+}
+
 .bio {
   display: inline-block;
   font-size: 13px;
@@ -67,10 +75,15 @@ main {
     @include flex-size(0 1 auto);
     @include shadow();
     background-color: white;
-    margin: $nav 0 50px;
+    margin: 25px 0 50px;
+    min-width: 600px;
     padding: 50px 60px 40px;
     position: relative;
     z-index: 10;
+
+    &:nth-of-type(1) {
+      margin-top: $nav;
+    }
   }
 
   aside {
@@ -141,6 +154,13 @@ main {
     font-size: 12px;
   }
 
+  .float-icon {
+    color: $grey;
+    float: right;
+    font-size: 120px;
+    margin: 30px 15px 30px 15px;
+  }
+
   p, ul, ol {
     font-size: 16px;
     line-height: 24px;
@@ -153,6 +173,12 @@ main {
 
     &.right {
       text-align: right;
+    }
+
+    small {
+      display: block;
+      line-height: 17px;
+      margin-top: 10px;
     }
 
   }
@@ -277,6 +303,21 @@ main {
     margin: 0 auto;
     table-layout: fixed;
     width: 250px;
+
+    &.full {
+      font-size: 13px;
+      width: 800px;
+      tbody tr {
+        height: 105px;
+      }
+      th, td {
+        padding: 10px;
+      }
+      td {
+        border-top: 1px solid #ccc;
+        vertical-align: middle;
+      }
+    }
 
     th, td {
       border-right: 1px solid #ccc;
