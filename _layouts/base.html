@@ -37,6 +37,16 @@
       <nav>
         <ul>
           <li>
+            <a {% if page.title == 'Meet the Team' %}class="active"{% else %}href="/team/"{% endif %}>
+              Meet the Team
+            </a>
+          </li>
+          <li>
+            <a {% if page.title == 'Wellness Challenge' %}class="active"{% else %}href="/challenge/"{% endif %}>
+              Wellness Challenge
+            </a>
+          </li>
+          <li>
             <a {% if page.title == 'How it Works' %}class="active"{% else %}href="/howitworks/"{% endif %}>
               How it Works
             </a>
@@ -49,11 +59,6 @@
           <li>
             <a {% if page.title == 'Appointments' %}class="active"{% else %}href="/appointments/"{% endif %}>
               Appointments
-            </a>
-          </li>
-          <li>
-            <a {% if page.title == 'Meet the Team' %}class="active"{% else %}href="/team/"{% endif %}>
-              Meet the Team
             </a>
           </li>
           <li>
