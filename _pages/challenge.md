@@ -7,7 +7,7 @@ image: limes
 This isn't your usual weight loss challenge. We’re going to ditch the diet mentality, challenge you to recalibrate your system, and leave you with a realistic way of eating for the long term.
 
 <p class="center">
-  <a class="button" href="/howitworks/">Sign Up Today</a>
+  <a class="button" href="https://clients.mindbodyonline.com/classic/ws?studioid=260796&stype=-8&sView=day" target="_blank">Sign Up Today</a>
   <small>Companies can enroll by calling (857) 293-9382 or e-mailing <a href="mailto:info@missionnutritionboston.com">info@missionnutritionboston.com</a> for pricing.</small>
 </p>
 
