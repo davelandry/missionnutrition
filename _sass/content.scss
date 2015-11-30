@@ -316,6 +316,9 @@ main {
       td {
         border-top: 1px solid #ccc;
         vertical-align: middle;
+        &.week {
+          font-weight: 700;
+        }
       }
     }
 
