@@ -12,7 +12,6 @@ image: limes
 What's included:
 
 * Weekly email challenges guiding your experience with recipes, guides, and tools to meet your goals.
-* Weekly online meet-ups - Offered twice weekly so you can connect with your dietitian and community.
 * E-mail access to your dietitian.
 * Weight Loss Percentage Tracking and Facebook Mini Challenges - In addition to earning points for weight loss, we reward you in practicing healthy behaviors through our mini challenges!
 * Grand Prize of $200 and 2 free Mission Nutrition Follow-Up Counseling Sessions (plus bragging rights!) for the participant earning the most points.
