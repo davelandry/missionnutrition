@@ -19,9 +19,10 @@
 
 .bio {
   display: inline-block;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 19px;
   margin-right: 100px;
+  position: relative;
   // text-align: justify;
   width: 350px;
 
@@ -39,26 +40,29 @@
   }
 
   h3 {
-    text-align: center;
+    color: $emerald;
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 20px;
   }
 
   h4 {
-    color: $emerald;
-    text-align: center;
+    margin-bottom: 20px;
   }
 
   img {
     @include rounded(50%);
     display: block;
-    height: 150px;
-    margin: 10px auto;
-    width: 150px;
+    float: right;
+    height: 100px;
+    margin: 0 10px;
+    width: 100px;
   }
 
   .social {
-    font-size: 11px;
-    text-align: center;
-    width: 100%;
+    display: inline-block;
+    line-height: 15px;
+    margin-right: -5px;
   }
 
 }

@@ -4,17 +4,9 @@ header: The Wellness Challenge
 image: limes
 ---
 
-<p class="center">
-  <a class="button" href="https://clients.mindbodyonline.com/classic/ws?studioid=260796&stype=-8&sView=day" target="_blank">Sign Up Today</a>
-  <small>Companies can enroll by calling (857) 293-9382 or e-mailing <a href="mailto:info@missionnutritionboston.com">info@missionnutritionboston.com</a> for pricing.</small>
-</p>
+Support your employees or small group to an effective, tailored wellness experience through accessible online quality coaching.
 
-What's included:
-
-* Weekly email challenges guiding your experience with recipes, guides, and tools to meet your goals.
-* E-mail access to your dietitian.
-* Weight Loss Percentage Tracking and Facebook Mini Challenges - In addition to earning points for weight loss, we reward you in practicing healthy behaviors through our mini challenges!
-* Grand Prize of $200 and 2 free Mission Nutrition Follow-Up Counseling Sessions (plus bragging rights!) for the participant earning the most points.
+Companies can enroll by calling (857) 293-9382 or e-mailing <a href="mailto:info@missionnutritionboston.com">info@missionnutritionboston.com</a> for pricing. Enrolling in the Wellness Challenge starts with a one hour design meeting to customize our four week experience for your small group or organization. Our dietary approaches are evidence-based and support long-term behavior change.
 
 <br />
 

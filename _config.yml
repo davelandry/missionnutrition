@@ -17,6 +17,9 @@ defaults:
       layout: post
       image: greenbeans
 
+gems:
+  - jekyll-redirect-from
+
 paginate: 5
 paginate_path: /blog/page:num/
 permalink: /blog/:year/:month/:day/:title
