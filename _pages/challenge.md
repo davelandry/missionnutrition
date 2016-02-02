@@ -4,9 +4,9 @@ header: The Wellness Challenge
 image: limes
 ---
 
-Support your employees or small group to an effective, tailored wellness experience through accessible online quality coaching.
+Support the health of your employees or small group with a wellness program delivered entirely online.
 
-Companies can enroll by calling (857) 293-9382 or e-mailing <a href="mailto:info@missionnutritionboston.com">info@missionnutritionboston.com</a> for pricing. Enrolling in the Wellness Challenge starts with a one hour design meeting to customize our four week experience for your small group or organization. Our dietary approaches are evidence-based and support long-term behavior change.
+Companies can enroll by calling (857) 293-9382 or e-mailing <a href="mailto:info@missionnutritionboston.com">info@missionnutritionboston.com</a> for pricing. The Wellness Challenge starts with a one hour design meeting to customize a four week experience for your small group or organization. Our dietary approaches are evidence-based and support long-term behavior change.
 
 <br />
 
