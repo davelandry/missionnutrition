@@ -39,14 +39,14 @@ header {
 
       li {
         display: inline-block;
-        letter-spacing: 1px;
-        margin: 20px 18px 0;
+        letter-spacing: 2px;
+        margin: 10px 15px 0;
         text-transform: uppercase;
 
         a {
           border-bottom: 2px solid transparent;
           color: $grey;
-          font-weight: 600;
+          font-weight: 400;
           padding-bottom: 2px;
 
           &:hover {

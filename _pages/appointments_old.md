@@ -3,7 +3,6 @@ title: Appointments
 header: Appointments
 image: strawberries
 description: Explore how easy it is to access our online nutrition services.
-redirect_from: /howitworks/
 ---
 
 
