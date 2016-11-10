@@ -272,6 +272,9 @@ main {
     &:hover {
       @include shadow;
     }
+    &.large {
+      font-size: 24px;
+    }
   }
 
   .flexbox {
