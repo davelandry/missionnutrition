@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="description" content="We are Registered Dietitians who deliver innovative nutrition services 100% online: we meet you where you are, when you are ready. {% if page.description %}{{ page.description }}{% else %}Book now to learn what you are capable of with us by your side. We can’t wait to get started!{% endif %}" />
+    <meta name="keywords" content="nutrition, weight loss, boston, dietitian, nutritionist, gluten free diet, pregnancy nutrition, diabetes, low glycemic, low fat, diet, nutrition counseling, healthy eating, help my kid lose weight, lose weight after having a baby, healthy snacking, emotional eating, healthy recipes, online dietitian" />
+    <meta name="author" content="Mission Nutrition" />
+
+    <!-- Facebook Properties -->
+    <meta property="og:image" content="/images/logo-square.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mission Nutrition{% if page.title %} | {{ page.title }}{% endif %}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}We are Registered Dietitians who deliver innovative nutrition services 100% online: we meet you where you are, when you are ready. Book now to learn what you are capable of with us by your side. We can’t wait to get started!{% endif %}" />
+    <meta property="fb:admins" content="USER_ID" />
+
+    <title>Mission Nutrition{% if page.title %} | {{ page.title }}{% endif %}</title>
+
+    <link rel="icon" type="image/png" href="/images/icon.ico">
+
+    <link rel="stylesheet" href="/css/simple.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="/js/jquery-2.2.2.min.js"></script>
+    <script src="/js/parallax.min.js"></script>
+
+  </head>
+  <body class="{{ page.title }}">
+
+    {{ content }}
+
+    <footer>
+
+      <a target="_blank" class="social" href="https://www.facebook.com/missionnutritionboston"><i class="fa fa-facebook"></i></a>
+      <a target="_blank" class="social" href="https://instagram.com/missionnutritionboston/"><i class="fa fa-instagram"></i></a>
+      <br>
+      <a href="/contact/">Contact Us</a> - (857) 293-9382
+      <br>
+      &copy; 2015 Mission Nutrition. All rights reserved.
+
+    </footer>
+
+    <script>
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-64813303-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>

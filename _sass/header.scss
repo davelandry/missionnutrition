@@ -1,0 +1,25 @@
+header, .header {
+  height: 400px;
+}
+
+header {
+  @include flex;
+  @include flex-direction(column);
+  @include align-items(center);
+  // background-color: rgba(255, 255, 255, 0.75);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  #logo {
+    margin-top: -10px;
+    width: 300px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+}

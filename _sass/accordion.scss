@@ -1,0 +1,117 @@
+$timing: 0.5s;
+$small: 400px;
+$large: 600px;
+
+.accordion {
+  @include flex;
+  @include flex-direction(row);
+  @include align-items(flex-end);
+  width: 100%;
+
+  .bellow {
+    @include box();
+    @include transition(background $timing, flex $timing);
+    background: rgb(250, 250, 250);
+    height: $small;
+    min-width: 250px;
+    position: relative;
+
+    .content {
+      @include transition(padding $timing);
+      height: $small;
+      left: 0;
+      overflow: hidden;
+      padding: 50px 0;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 100%;
+    }
+
+    &.large {
+      height: $large;
+      .content {
+        height: $large;
+      }
+    }
+
+    .title {
+      @include transition(opacity $timing);
+      color: $emerald;
+      display: block;
+      font-family: $serif;
+      font-size: 32px;
+      opacity: 0.75;
+      text-decoration: none;
+    }
+
+    .price {
+      @include transition(opacity $timing);
+      display: block;
+      font-size: 64px;
+      margin: 10px auto;
+      opacity: 0;
+
+      .duration {
+        font-size: 32px;
+        vertical-align: bottom;
+      }
+    }
+
+    p {
+      @include transition(opacity $timing);
+      margin: 15px auto;
+      opacity: 0;
+      width: 400px;
+    }
+
+    .button {
+      @include transition(opacity $timing);
+      opacity: 0;
+    }
+
+    &.active {
+      @include flex-size(1);
+      background: white;
+
+      .content {
+        @include shadow();
+        padding: 50px;
+        z-index: 10;
+      }
+
+      .title {
+        opacity: 1;
+      }
+
+      .price, p, .button {
+        opacity: 1;
+      }
+
+    }
+
+  }
+
+  #melissa {
+    @include box();
+    padding: 50px 0 50px 50px;
+    width: 300px;
+    img {
+      display: block;
+      margin: 10px auto;
+      width: 100px;
+    }
+  }
+
+  #iframe {
+    @include box();
+    @include flex-size(1);
+    padding: 50px;
+
+    iframe {
+      height: 500px;
+      margin-top: 25px;
+      width: 100%;
+    }
+  }
+}

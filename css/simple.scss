@@ -1,0 +1,61 @@
+---
+---
+
+@import "fonts";
+@import "colors";
+@import "vendor";
+@import "reset";
+
+body {
+  color: $grey;
+  font-family: $sans-serif;
+  min-height: 100vh;
+}
+
+.parallax-window {
+  background: transparent;
+  min-height: 190px;
+  overflow: hidden;
+  position: relative;
+
+  @media screen and (max-width: 415px) {
+    min-height: 107px;
+  }
+
+}
+
+.parallax-mirror {
+  opacity: 0.25;
+}
+
+h2 {
+  color: $emerald;
+  display: block;
+  font-family: $serif;
+  font-size: 32px;
+  text-align: center;
+  a {
+    color: $emerald;
+    text-decoration: none;
+  }
+}
+
+.button {
+  @include box();
+  @include shadow($shadow);
+  @include transition(background-color 0.1s);
+  background-color: $emerald;
+  color: white;
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 13px 11px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: lighten($emerald, 1);
+  }
+}
+
+@import "header";
+@import "accordion";
+@import "footer";

@@ -77,7 +77,7 @@ main {
 
   section {
     @include flex-size(0 1 auto);
-    @include shadow();
+    @include shadow($shadow);
     background-color: white;
     margin: 25px 0 50px;
     min-width: 600px;
@@ -91,7 +91,7 @@ main {
   }
 
   aside {
-    @include shadow();
+    @include shadow($shadow);
     background-color: white;
     margin: $nav 50px 50px;
     padding: 50px 60px 40px;
