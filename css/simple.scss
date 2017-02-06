@@ -33,11 +33,26 @@ h2 {
   display: block;
   font-family: $serif;
   font-size: 32px;
+  font-weight: lighter;
+  letter-spacing: 1px;
   text-align: center;
   a {
     color: $emerald;
     text-decoration: none;
   }
+}
+
+h3 {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
 }
 
 .button {
@@ -58,4 +73,5 @@ h2 {
 
 @import "header";
 @import "accordion";
+@import "book";
 @import "footer";

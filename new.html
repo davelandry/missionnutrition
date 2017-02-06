@@ -2,84 +2,94 @@
 layout: simple
 ---
 
-<div class="header parallax-window" data-parallax="scroll" data-image-src="/images/peaches.jpg" data-speed="0.25"></div>
+<div class="header parallax-window" data-parallax="scroll" data-image-src="/images/header.jpg" data-speed="0.25"></div>
 
 <header>
 
+  <a class="login" href="https://gethealthie.com/users/sign_in.html">Log In</a>
+
   <img id="logo" src="/images/logo.png" alt="Mission Nutrition" />
-  <p>
-    Lose weight. Feel better. Enjoy food.
+  <p id="tagline">
+    Lose weight.&nbsp;&nbsp;Feel better.&nbsp;&nbsp;Enjoy food.
   </p>
-  <div class="buttons">
-    <a class="button scroll" href="#meal">Meal Planning</a>
-    <a class="button scroll" href="#coaching">Coaching</a>
+
+  <div class="accordion">
+
+    <div class="bellow active">
+      <div class="content">
+        <h2><a class="title scroll" name="meal" href="#meal">Meal Planning</a></h2>
+        <div class="price">
+          $39<span class="duration">/month</span>
+        </div>
+        <p>
+          You know what to do and need an expert to assist when life gets in the way!
+        </p>
+        <a class="button scroll" href="#book">Purchase</a>
+      </div>
+    </div>
+
+    <div class="bellow">
+      <div class="content">
+        <h2><a class="title scroll" name="coaching" href="#coaching">Coaching</a></h2>
+        <div class="price">
+          $199<span class="duration">/month</span>
+        </div>
+        <p>
+          Motivation. Support. You're paying for clarity around your vision goals.
+        </p>
+        <a class="button scroll" href="#book">Purchase</a>
+      </div>
+    </div>
+
   </div>
 
 </header>
 
-<section class="accordion">
+<section id="book">
 
-  <div class="bellow active">
-    <div class="content">
-      <h2><a class="title scroll" name="meal" href="#meal">Meal Planning</a></h2>
-      <div class="price">
-        $39<span class="duration">/month</span>
-      </div>
-      <p>
-        You know what to do and need an expert to assist when life gets in the way!
-      </p>
-      <a class="button scroll" href="#book">Buy</a>
-    </div>
-  </div>
+  <h2><a class="title scroll" name="book" href="#book">Book an Appointment</a></h2>
 
-  <div class="bellow">
-    <div class="content">
-      <h2><a class="title scroll" name="coaching" href="#coaching">Coaching</a></h2>
-      <div class="price">
-        $199<span class="duration">/month</span>
-      </div>
+  <div class="flex">
+
+    <div id="melissa">
+      <img src="/images/melissa.jpg" alt="Melissa" />
+      <h3>Meet the Coach</h3>
       <p>
-        Motivation. Support. You're paying for clarity around your vision goals.
+        Melissa is a Registered, Licensed (MA#3065) Dietitian specializing in weight management, diabetes, and family nutrition (including pregnancy, lactation, and child/teen nutrition).
       </p>
-      <a class="button scroll" href="#book">Book</a>
+      <div class="links">
+        <a class="social" href="https://www.linkedin.com/profile/view?id=AAkAAALoRFMBDLl3t4MO2V0KuQX5FKUklVKOjME" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
     </div>
+
+    <div id="iframe">
+      <iframe src="https://gethealthie.com/offerings/embeddable_offerings?user_id=560&immediate_purchase=true&is_group=false"></iframe>
+    </div>
+
   </div>
 
 </section>
-
-<div class="parallax-window" data-parallax="scroll" data-image-src="/images/limes.jpg" data-speed="0.25"></div>
-
-<section class="accordion">
-
-  <div id="melissa">
-    <img src="/images/melissa.jpg" alt="Melissa" />
-    <p>
-      Melissa is a Registered, Licensed (MA#3065) Dietitian specializing in weight management, diabetes, and family nutrition (including pregnancy, lactation, and child/teen nutrition).
-    </p>
-    <div class="links">
-      <a class="social" href="https://www.linkedin.com/profile/view?id=AAkAAALoRFMBDLl3t4MO2V0KuQX5FKUklVKOjME" target="_blank"><i class="fa fa-linkedin"></i></a>
-    </div>
-  </div>
-
-  <div id="iframe">
-    <h2><a class="title scroll" name="book" href="#book">Book an Appointment</a></h2>
-    <iframe src="https://gethealthie.com/appointments/embed_appt?dietitian_id=560&require_offering=true"></iframe>
-  </div>
-
-</section>
-
-<div class="parallax-window" data-parallax="scroll" data-image-src="/images/strawberries.jpg" data-speed="0.25"></div>
 
 <script>
 
   $(document).on("click", "a.scroll", function(event) {
     event.preventDefault();
+    console.log("click");
     var section = $('[name="' + $.attr(this, 'href').substr(1) + '"]');
     if ($(section[0].parentNode.parentNode.parentNode).hasClass("bellow")) {
       $(section[0].parentNode.parentNode.parentNode.parentNode).find(".bellow").removeClass("active");
       $(section[0].parentNode.parentNode.parentNode).addClass("active");
     }
-    $("html, body").animate({scrollTop: section.offset().top}, 500);
+    else {
+      $("html, body").animate({scrollTop: section.offset().top}, 500);
+    }
+  });
+
+  $(document).on("click", ".bellow", function(event) {
+    event.preventDefault();
+    var section = $('[name="' + $(this).find(".title").attr("href").substr(1) + '"]');
+    $(this.parentNode).find(".bellow").removeClass("active");
+    $(this).addClass("active");
   });
 
 </script>

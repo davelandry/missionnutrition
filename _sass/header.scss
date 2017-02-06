@@ -1,24 +1,55 @@
+$height: 700px;
+
 header, .header {
-  height: 400px;
+  height: $height;
 }
 
 header {
   @include flex;
   @include flex-direction(column);
   @include align-items(center);
-  // background-color: rgba(255, 255, 255, 0.75);
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
 
-  #logo {
-    margin-top: -10px;
-    width: 300px;
+  .login {
+    @include transition(border-color 0.25s, opacity 0.25s);
+    border-bottom: 1px solid transparent;
+    color: $grey;
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.75;
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+    top: 15px;
+    vertical-align: bottom;
+
+    &:hover {
+      border-color: $grey;
+      opacity: 1;
+      &.active {
+        cursor: pointer;
+      }
+    }
+
+    i {
+      font-size: 11px !important;
+      margin-top: 5px;
+    }
+
   }
 
-  p {
-    font-size: 16px;
+  #logo {
+    margin-top: -10px;
+    width: 350px;
+  }
+
+  #tagline {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
     line-height: 20px;
   }
 
