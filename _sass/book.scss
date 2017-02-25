@@ -76,6 +76,7 @@
     #iframe {
       @include box();
       @include flex-size(1);
+      max-width: 900px;
       padding: 25px 50px 50px;
 
       iframe {
