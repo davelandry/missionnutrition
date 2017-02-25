@@ -1,6 +1,6 @@
 $timing: 0.5s;
 $height: 450px;
-$small: 200px;
+$small: 175px;
 $large: 400px;
 
 .accordion {
@@ -18,11 +18,47 @@ $large: 400px;
     display: inline-block;
     height: $height;
     margin: 0 5px;
-    min-width: 250px;
     overflow: hidden;
     position: relative;
     width: $small;
     z-index: 9;
+
+    &:before {
+      @include transition(opacity 0.1s);
+      bottom: 50px;
+      color: $grey;
+      font-family: "FontAwesome";
+      font-size: 75px;
+      left: 50%;
+      margin-left: -50px;
+      opacity: 0.1;
+      position: absolute;
+      text-align: center;
+      width: 100px;
+    }
+
+    &#meal:before {
+      content: "\f073";
+    }
+
+    &#mobile:before {
+      bottom: 30px;
+      content: "\f10b";
+      font-size: 120px;
+    }
+
+    &#coach:before {
+      content: "\f0e6";
+    }
+
+    &:hover {
+      .title {
+        opacity: 1;
+      }
+      &:before {
+        opacity: 0.3;
+      }
+    }
 
     .content {
       @include box();
@@ -40,11 +76,11 @@ $large: 400px;
 
     .title {
       @include transform(scale(1));
-      @include transition(opacity $timing, transform $timing);
+      @include transition(opacity 0.1s, transform $timing);
       color: $emerald;
       display: block;
       font-family: $serif;
-      font-size: 26px;
+      font-size: 18px;
       opacity: 0.75;
       text-decoration: none;
     }
@@ -55,7 +91,7 @@ $large: 400px;
       display: block;
       font-size: 64px;
       margin: 10px auto;
-      opacity: 0.1;
+      opacity: 0;
 
       .duration {
         @include transition(width $timing);
@@ -81,7 +117,7 @@ $large: 400px;
       font-size: 13px;
       font-weight: 300;
       margin: 15px auto;
-      opacity: 0.25;
+      opacity: 0;
       text-align: left;
       width: $large;
     }
@@ -99,7 +135,7 @@ $large: 400px;
       bottom: 30px;
       left: 50%;
       margin-left: -50px;
-      opacity: 0.25;
+      opacity: 0;
       pointer-events: none;
       position: absolute;
       width: 100px;
@@ -115,8 +151,12 @@ $large: 400px;
       width: $large + 50px;
       z-index: 10;
 
+      &:before {
+        opacity: 0;
+      }
+
       .title {
-        @include transform(scale(1.2));
+        @include transform(scale(1.5));
       }
 
       .title, .price, p, ul, .button {

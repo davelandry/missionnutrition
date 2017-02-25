@@ -9,7 +9,7 @@ footer {
 
   a {
     @include transition(border-color 0.25s);
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     color: $tigerlily;
     text-decoration: none;
     vertical-align: bottom;
