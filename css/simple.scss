@@ -1,6 +1,7 @@
 ---
 ---
 
+@import "font-awesome/font-awesome";
 @import "fonts";
 @import "colors";
 @import "vendor";
@@ -25,7 +26,20 @@ body {
 }
 
 .parallax-mirror {
-  opacity: 0.25;
+  // opacity: 0.25;
+  &:after {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.parallax-slider {
+  @include blur(2);
 }
 
 h2 {

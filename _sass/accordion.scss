@@ -1,107 +1,131 @@
 $timing: 0.5s;
-$small: 400px;
-$large: 600px;
+$height: 450px;
+$small: 200px;
+$large: 400px;
 
 .accordion {
-  @include flex;
-  @include flex-direction(row);
-  @include align-items(flex-end);
   margin-top: 50px;
-  width: 700px;
+  text-align: center;
+  width: 100%;
 
   .bellow {
     @include box();
-    @include shadow(0 2px 2px rgba(0, 0, 0, 0.25));
-    @include transform(scale(0.9));
-    @include transition(background $timing, flex $timing, transform $timing);
+    @include shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+    @include transform(scale(1));
+    @include transition(background $timing, margin $timing, transform $timing, width $timing);
     background: rgb(253, 253, 253);
     cursor: pointer;
-    height: $small;
+    display: inline-block;
+    height: $height;
+    margin: 0 5px;
     min-width: 250px;
+    overflow: hidden;
     position: relative;
+    width: $small;
     z-index: 9;
 
-    &:first-child {
-      @include transform-origin(100% 50%);
-    }
-
-    &:last-child {
-      @include transform-origin(0% 50%);
-    }
-
     .content {
+      @include box();
       @include transition(padding $timing);
-      height: $small;
-      left: 0;
+      height: $height;
+      left: 50%;
+      margin-left: -$large/2 - 25px;
       overflow: hidden;
-      padding: 25px 0;
+      padding: 25px 25px;
       position: absolute;
       text-align: center;
       top: 0;
-      width: 100%;
-    }
-
-    &.large {
-      height: $large;
-      .content {
-        height: $large;
-      }
+      width: $large + 50px;
     }
 
     .title {
-      @include transition(opacity $timing);
+      @include transform(scale(1));
+      @include transition(opacity $timing, transform $timing);
       color: $emerald;
       display: block;
       font-family: $serif;
-      font-size: 32px;
+      font-size: 26px;
       opacity: 0.75;
       text-decoration: none;
     }
 
     .price {
       @include transition(opacity $timing);
+      @include blur(2);
       display: block;
       font-size: 64px;
       margin: 10px auto;
-      opacity: 0;
+      opacity: 0.1;
 
       .duration {
+        @include transition(width $timing);
+        display: inline-block;
         font-size: 32px;
+        overflow: hidden;
+        text-align: left;
         vertical-align: bottom;
+        width: 0;
+
+        &.small {
+          font-size: 16px;
+          margin-bottom: 5px;
+          margin-left: 5px;
+        }
       }
     }
 
-    p {
+    p, ul {
       @include transition(opacity $timing);
+      @include blur(1);
+      color: $grey;
+      font-size: 13px;
+      font-weight: 300;
       margin: 15px auto;
-      opacity: 0;
-      width: 400px;
+      opacity: 0.25;
+      text-align: left;
+      width: $large;
+    }
+
+    ul {
+      margin: 0 auto 15px;
+      li {
+        margin: 5px 25px;
+      }
     }
 
     .button {
       @include transition(opacity $timing);
-      opacity: 0;
+      @include blur(2);
+      bottom: 30px;
+      left: 50%;
+      margin-left: -50px;
+      opacity: 0.25;
       pointer-events: none;
+      position: absolute;
+      width: 100px;
     }
 
     &.active {
       @include flex-size(1);
       @include shadow();
-      @include transform(scale(1));
+      @include transform(scale(1.1));
       background: white;
       cursor: auto;
+      margin: 0 28px;
+      width: $large + 50px;
       z-index: 10;
 
-      .content {
-        padding: 25px;
-      }
-
       .title {
-        opacity: 1;
+        @include transform(scale(1.2));
       }
 
-      .price, p, .button {
+      .title, .price, p, ul, .button {
+        @include blur(0);
         opacity: 1;
+
+        .duration {
+          width: 105px;
+        }
       }
 
       .button {
