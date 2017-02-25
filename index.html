@@ -1,37 +1,136 @@
 ---
-layout: default
-image: peaches
+layout: simple
 ---
 
-  <h1 class="header">Nutrition Counseling,<br />Direct to your Living Room.</h1>
+<div class="header parallax-window" data-parallax="scroll" data-image-src="/images/header.jpg" data-speed="0.25"></div>
 
-  <p>
-    No driving, traffic, waiting rooms, or frustration: just you reaching your health goals with our secure online meeting and messaging platform. Lose weight. Feel better. Enjoy food.
+<header>
+
+  <a class="login" href="https://gethealthie.com/users/sign_in.html">Customer Log In</a>
+
+  <img id="logo" src="/images/logo-light-shadow.png" alt="Mission Nutrition" />
+  <p id="tagline">
+    Mobile Health Coaching with a Registered Dietitian.<br />
+    You can do it: Feel better. Enjoy Food
   </p>
 
-  <p class="center">
-    <br>
-    <a class="button" href="/pricing/">Pricing &amp; Services</a>
-    <a class="button" href="/appointments/">Book Now</a>
-    <small>If you are a healthcare professional and would like to refer patients, <a href="/referrals/">click here</a>.</small>
-  </p>
+  <div class="accordion">
+
+    <div id="meal" class="bellow active">
+      <div class="content">
+        <h2><a class="title scroll" name="meal" href="#meal">Meal Planning</a></h2>
+        <div class="price">
+          $39<span class="duration">/month</span>
+        </div>
+        <p>
+          Complete the menu profile and get a tailored meal plan that works with your lifestyle. This service includes:
+        </p>
+        <ul>
+          <li>
+            A starter 7 day menu plan
+          </li>
+          <li>
+            Calorie budgets for eating out
+          <li>
+            Print and shop grocery list
+          </li>
+          <li>
+            2 requests/month for new recipes
+          </li>
+        </ul>
+        <a class="button scroll" href="#book">Purchase</a>
+      </div>
+    </div>
+
+    <div id="mobile" class="bellow">
+      <div class="content">
+        <h2><a class="title scroll" name="coaching" href="#coaching">Mobile Coaching</a></h2>
+        <div class="price">
+          $39<span class="duration">/month</span>
+        </div>
+        <p>
+          Log daily intake and receive unlimited chat support through our mobile app.</p>
+          <ul>
+          <li> Discover what works through just-in-time coaching from Melissa </li>
+          <li> Ask advice when you need it </li>
+          <li> Stay accountable right through your smart phone </li>
+        </ul>
+        <a class="button scroll" href="#book">Purchase</a>
+      </div>
+    </div>
+
+    <div id="coach" class="bellow">
+      <div class="content">
+        <h2><a class="title scroll" name="coaching" href="#coaching">Coaching</a></h2>
+        <div class="price">
+          $199<span class="duration small">Introductory Package</span>
+        </div>
+        <p>
+          Find your strengths and build motivation to reach your health goals with:
+          <ul>
+            <li>1, 60 minute session</li>
+            <li>1, 30 minute session</li>
+            <li>1 month unlimited Dietitian on Demand</li>
+          </ul>
+        </p>
+        <a class="button scroll" href="#book">Purchase</a>
+      </div>
+    </div>
+
+  </div>
+
+</header>
+
+<section id="book">
+
+  <h2><a class="title scroll" name="book" href="#book">Services and Pricing</a></h2>
+
+  <div class="flex">
+
+    <div id="melissa">
+      <img src="/images/melissa.jpg" alt="Melissa" />
+      <h3>Meet Melissa</h3>
+      <p>Working with you means taking part in your journey toward your best health. My style aims to not cramp yours: the plans you make won't ever ask you to abandon the person you are and the values you hold. My joy is seeing clients reach their dreams in ways they never thought possible.
+      </p>
+      <p>
+        Working with me means taking the credibility of a Registered Dietitian health coach with you wherever you go. No matter what service you choose, I am your dedicated partner, offering humor and perspective along the way. <a href="https://docs.google.com/forms/d/e/1FAIpQLSewgjQfOO-zYVikz-oCMtEjnkamAQTEweTuT8F00rGyEoKEFA/viewform">Contact me</a> for a complimentary 10 minute consultation, or if you’re ready, <strong>book your service now!</strong>
+      </p>
+      <div class="links">
+        <a target="_blank" class="social" href="https://www.linkedin.com/profile/view?id=AAkAAALoRFMBDLl3t4MO2V0KuQX5FKUklVKOjME"><i class="fa fa-linkedin"></i></a>
+        <a target="_blank" class="social" href="https://www.facebook.com/missionnutritionboston"><i class="fa fa-facebook"></i></a>
+        <a target="_blank" class="social" href="https://instagram.com/missionnutritionboston/"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" class="social" href="https://medium.com/@missionnutritionboston"><i class="fa fa-medium"></i></a>
+      </div>
+    </div>
+
+    <div id="iframe">
+      <iframe src="https://gethealthie.com/offerings/embeddable_offerings?user_id=560&immediate_purchase=true&is_group=false"></iframe>
+    </div>
+
+  </div>
 
 </section>
-<section>
 
-  <h4 class="cursive">Featured Service</h4>
-  <h1 class="header">The Wellness Challenge</h1>
-  <h4 class="tagline">For Companies and Small Groups</h4>
+<script>
 
-  <p>
-    <i class="float-icon fa fa-users"></i>
-    Are you up for a challenge? We’re going to ditch the diet mentality, challenge you to recalibrate your system, and leave you with a realistic way of eating for the long term.
-  </p>
-  <p>
-    Entirely online. Designed to keep you motivated through group interaction. What are you waiting for?
-  </p>
+  $(document).on("click", "a.scroll", function(event) {
+    event.preventDefault();
+    console.log("click");
+    var section = $('[name="' + $.attr(this, 'href').substr(1) + '"]');
+    if ($(section[0].parentNode.parentNode.parentNode).hasClass("bellow")) {
+      $(section[0].parentNode.parentNode.parentNode.parentNode).find(".bellow").removeClass("active");
+      $(section[0].parentNode.parentNode.parentNode).addClass("active");
+    }
+    else {
+      $("html, body").animate({scrollTop: section.offset().top}, 500);
+    }
+  });
 
-  <p class="center">
-    <br>
-    <a class="button" href="/challenge/">Challenge Yourself</a>
-  </p>
+  $(document).on("click", ".bellow", function(event) {
+    event.preventDefault();
+    var section = $('[name="' + $(this).find(".title").attr("href").substr(1) + '"]');
+    $(this.parentNode).find(".bellow").removeClass("active");
+    $(this).addClass("active");
+  });
+
+</script>
