@@ -14,7 +14,7 @@
     #melissa {
       @include box();
       padding: 50px 0 50px 50px;
-      width: 350px;
+      width: 380px;
 
       img {
         @include rounded(50px);
@@ -28,6 +28,9 @@
       }
 
       p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 23px;
         margin: 10px 0;
 
         a {

@@ -2,6 +2,7 @@ $timing: 0.5s;
 $height: 450px;
 $small: 175px;
 $large: 400px;
+$padding: 25px;
 
 .accordion {
   margin-top: 50px;
@@ -25,7 +26,7 @@ $large: 400px;
 
     &:before {
       @include transition(opacity 0.1s);
-      bottom: 50px;
+      bottom: $padding * 2;
       color: $grey;
       font-family: "FontAwesome";
       font-size: 75px;
@@ -65,13 +66,13 @@ $large: 400px;
       @include transition(padding $timing);
       height: $height;
       left: 50%;
-      margin-left: -$large/2 - 25px;
+      margin-left: -$large/2 - $padding;
       overflow: hidden;
-      padding: 25px 25px;
+      padding: $padding $padding;
       position: absolute;
       text-align: center;
       top: 0;
-      width: $large + 50px;
+      width: $large + $padding * 2;
     }
 
     .title {
@@ -111,13 +112,16 @@ $large: 400px;
     }
 
     p, ul {
+      @include box();
       @include transition(opacity $timing);
       @include blur(1);
       color: $grey;
-      font-size: 13px;
-      font-weight: 300;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
       margin: 15px auto;
       opacity: 0;
+      padding: 0 15px;
       text-align: left;
       width: $large;
     }
@@ -125,7 +129,7 @@ $large: 400px;
     ul {
       margin: 0 auto 15px;
       li {
-        margin: 5px 25px;
+        margin: 5px $padding;
       }
     }
 
@@ -148,7 +152,7 @@ $large: 400px;
       background: white;
       cursor: auto;
       margin: 0 28px;
-      width: $large + 50px;
+      width: $large + $padding * 2;
       z-index: 10;
 
       &:before {
