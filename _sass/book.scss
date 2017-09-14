@@ -8,7 +8,7 @@
   .flex {
     @include flex;
     @include flex-direction(row);
-    @include align-items(flex-end);
+    @include align-items(flex-start);
     width: 100%;
 
     #melissa {
@@ -17,10 +17,10 @@
       width: 380px;
 
       img {
-        @include rounded(50px);
+        @include rounded(150px);
         display: block;
-        margin: 10px auto;
-        width: 100px;
+        margin: 0 auto 40px;
+        width: 160px;
       }
 
       h3 {
@@ -47,7 +47,7 @@
         }
 
       }
-      
+
       .signature {
         margin-top: 0;
         text-align: left;
@@ -81,11 +81,11 @@
     #iframe {
       @include box();
       @include flex-size(1);
-      max-width: 900px;
-      padding: 25px 50px 50px;
+      max-width: 870px;
+      padding: 25px 50px 0;
 
       iframe {
-        height: 600px;
+        height: 1000px;
         width: 100%;
       }
     }
