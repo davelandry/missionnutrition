@@ -1,6 +1,6 @@
 $timing: 0.5s;
-$height: 425px;
-$small: 175px;
+$height: 500px;
+$small: 150px;
 $large: 400px;
 $padding: 25px;
 
@@ -23,6 +23,21 @@ $padding: 25px;
     position: relative;
     width: $small;
     z-index: 9;
+
+    .small-title {
+      @include transition(opacity 0.1s);
+      color: $emerald;
+      display: block;
+      font-family: $serif;
+      font-size: 18px;
+      left: 50%;
+      margin-left: -$small / 2;
+      padding: $padding / 2;
+      position: absolute;
+      text-decoration: none;
+      top: 10px;
+      width: $small;
+    }
 
     &:before {
       @include transition(opacity 0.1s);
@@ -52,6 +67,10 @@ $padding: 25px;
       content: "\f0e6";
     }
 
+    &#smallgroup:before {
+      content: "\f0c0";
+    }
+
     &:hover {
       .title {
         opacity: 1;
@@ -63,10 +82,14 @@ $padding: 25px;
 
     .content {
       @include box();
-      @include transition(padding $timing);
+      @include blur(2);
+      @include transition(opacity $timing);
+      @include flex();
+      @include flex-direction(column);
       height: $height;
       left: 50%;
       margin-left: -$large/2 - $padding;
+      opacity: 0;
       overflow: hidden;
       padding: $padding $padding;
       position: absolute;
@@ -76,32 +99,24 @@ $padding: 25px;
     }
 
     .title {
-      @include transform(scale(1));
-      @include transition(opacity 0.1s, transform $timing);
       color: $emerald;
       display: block;
       font-family: $serif;
-      font-size: 18px;
-      opacity: 0.75;
+      font-size: 24px;
       text-decoration: none;
     }
 
     .price {
-      @include transition(opacity $timing);
-      @include blur(2);
       display: block;
       font-size: 64px;
       margin: 10px auto;
-      opacity: 0;
 
       .duration {
-        @include transition(width $timing);
         display: inline-block;
         font-size: 32px;
         overflow: hidden;
         text-align: left;
         vertical-align: bottom;
-        width: 0;
 
         &.small {
           font-size: 16px;
@@ -113,35 +128,25 @@ $padding: 25px;
 
     p, ul {
       @include box();
-      @include transition(opacity $timing);
-      @include blur(1);
       color: $grey;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 400;
       line-height: 21px;
-      margin: 15px auto;
-      opacity: 0;
+      margin: 5px auto;
       padding: 0 15px;
       text-align: left;
       width: $large;
     }
 
     ul {
-      margin: 0 auto 15px;
       li {
         margin: 5px $padding;
       }
     }
 
     .button {
-      @include transition(opacity $timing);
-      @include blur(2);
-      bottom: 30px;
-      left: 50%;
-      margin-left: -50px;
-      opacity: 0;
+      margin: 10px auto;
       pointer-events: none;
-      position: absolute;
       width: 100px;
     }
 
@@ -155,21 +160,13 @@ $padding: 25px;
       width: $large + $padding * 2;
       z-index: 10;
 
-      &:before {
+      .small-title, &:before {
         opacity: 0;
       }
 
-      .title {
-        @include transform(scale(1.5));
-      }
-
-      .title, .price, p, ul, .button {
+      .content {
         @include blur(0);
         opacity: 1;
-
-        .duration {
-          width: 105px;
-        }
       }
 
       .button {

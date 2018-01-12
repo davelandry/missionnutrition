@@ -15,68 +15,24 @@ layout: simple
   </p>
 
   <div class="accordion">
+    {% assign services = (site.services | sort: "order") %}
+    {% for service in services %}
 
-    <div id="meal" class="bellow active">
+    <div id="{{ service.path | replace: '_services/', '' | replace: '.md', '' }}" class="bellow{% if service.open %} active{% endif %}">
+      <div class="small-title">
+        {{ service.title }}
+      </div>
       <div class="content">
-        <h2><a class="title scroll" name="meal" href="#meal">Meal Plans</a></h2>
+        <h2><a class="title scroll" name="{{ service.id }}" href="#{{ service.id }}">{{ service.title }}</a></h2>
         <div class="price">
-          $49<span class="duration">/month</span>
+          {{ service.cost }}<span class="duration{% if service.per.size > 10 %} small{% endif %}">{{ service.per }}</span>
         </div>
-        <p>
-          Complete MN's menu profile and get tailored monthly meal plans that work with your lifestyle. This service includes:
-        </p>
-        <ul>
-          <li>
-            A starter 7 day menu plan
-          </li>
-          <li>
-            Calorie budgets for eating out
-          <li>
-            Print and shop grocery list (no more wasting food!)
-          </li>
-          <li>
-            2 requests/month for new recipes
-          </li>
-        </ul>
+        {{ service }}
         <a class="button scroll" href="#book">Purchase</a>
       </div>
     </div>
 
-    <div id="mobile" class="bellow">
-      <div class="content">
-        <h2><a class="title scroll" name="coaching" href="#coaching">Meal Plan Coaching</a></h2>
-        <div class="price">
-          $79<span class="duration">/month</span>
-        </div>
-        <p>
-         In addition to recieving monthly meal plans, log daily intake and get unlimited chat support through MN's mobile app:</p>
-          <ul>
-          <li> Discover what works with just-in-time coaching</li>
-          <li> Ask advice when you need it </li>
-          <li> Stay accountable and motivated through your smart phone </li>
-        </ul>
-        <a class="button scroll" href="#book">Purchase</a>
-      </div>
-    </div>
-
-    <div id="coach" class="bellow">
-      <div class="content">
-        <h2><a class="title scroll" name="coaching" href="#coaching">Coaching Package</a></h2>
-        <div class="price">
-          $199<span class="duration small">Introductory Package</span>
-        </div>
-        <p>
-          Find your strengths and build motivation to reach your health goals with:
-          <ul>
-            <li>1, 60 minute session</li>
-            <li>1, 30 minute session</li>
-            <li>1 tailored meal plan</li>
-            <li>1 month unlimited mobile coaching</li>
-          </ul>
-        </p>
-        <a class="button scroll" href="#book">Purchase</a>
-      </div>
-    </div>
+    {% endfor %}
 
   </div>
 

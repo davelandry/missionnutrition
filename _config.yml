@@ -2,6 +2,8 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  promos:
+    output: false
   services:
     output: false
 
