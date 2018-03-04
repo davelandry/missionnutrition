@@ -1,8 +1,8 @@
 ---
-title: Coaching Package
-cost: $199
-per: Introductory Package
-order: 4
+title: Coaching
+cost: $99
+per: /month
+order: 2
 open: false
 ---
 

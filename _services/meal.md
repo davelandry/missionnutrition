@@ -1,14 +1,13 @@
 ---
-title: Meal Plans
+title: Meal Planning
 cost: $49
 per: /month
 order: 1
-open: false
+open: true
 ---
 
-Complete MN's menu profile and get tailored monthly meal plans that work with your lifestyle. This service includes:
+In addition to receiving monthly meal plans, log daily intake and get unlimited chat support through MN's mobile app:
 
-* A starter 7 day menu plan
-* Calorie budgets for eating out
-* Print and shop grocery list (no more wasting food!)
-* 2 requests/month for new recipes
+* Discover what works with just-in-time coaching
+* Ask advice when you need it
+* Stay accountable and motivated through your smart phone

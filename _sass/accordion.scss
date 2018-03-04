@@ -1,7 +1,7 @@
 $timing: 0.5s;
-$height: 500px;
+$height: 400px;
 $small: 150px;
-$large: 400px;
+$large: 420px;
 $padding: 25px;
 
 .accordion {
@@ -57,18 +57,8 @@ $padding: 25px;
       content: "\f073";
     }
 
-    &#mobile:before {
-      bottom: 30px;
-      content: "\f10b";
-      font-size: 120px;
-    }
-
     &#coach:before {
       content: "\f0e6";
-    }
-
-    &#smallgroup:before {
-      content: "\f0c0";
     }
 
     &:hover {
@@ -147,7 +137,6 @@ $padding: 25px;
     .button {
       margin: 10px auto;
       pointer-events: none;
-      width: 100px;
     }
 
     &.active {
