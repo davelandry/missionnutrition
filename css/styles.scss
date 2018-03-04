@@ -1,8 +1,9 @@
 ---
 ---
 
+@import "font-awesome/font-awesome";
 @import "fonts";
-@import "variables";
+@import "colors";
 @import "vendor";
 @import "reset";
 
@@ -12,60 +13,79 @@ body {
   min-height: 100vh;
 }
 
-a {
-  @include transition(border-color 0.25s);
-  border-bottom: 2px solid transparent;
-  color: $tigerlily;
+.parallax-window {
+  background: transparent;
+  min-height: 190px;
+  overflow: hidden;
+  position: relative;
+
+  @media screen and (max-width: 415px) {
+    min-height: 107px;
+  }
+
+}
+
+.parallax-mirror {
+  // opacity: 0.25;
+  &:after {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.parallax-slider {
+  @include blur(2);
+}
+
+h2 {
+  color: $emerald;
+  display: block;
+  font-family: $serif;
+  font-size: 32px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-align: center;
+  a {
+    color: $emerald;
+    text-decoration: none;
+  }
+}
+
+h3 {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.button {
+  @include box();
+  @include shadow($shadow);
+  @include transition(background-color 0.1s);
+  background-color: $emerald;
+  color: white;
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 13px 11px;
   text-decoration: none;
-  vertical-align: bottom;
-
-  &.anchor {
-    position: relative;
-    top: -100px;
-  }
-
-  &.right {
-    float: right;
-  }
 
   &:hover {
-    border-color: $tigerlily;
-    &.active {
-      cursor: pointer;
-    }
+    background-color: lighten($emerald, 1);
   }
-
-  i {
-    font-size: 11px !important;
-    margin-top: 5px;
-  }
-
-  &.social {
-    @include transition(color 0.1s);
-    color: $grey;
-    display: inline-block;
-
-    i {
-      font-size: 14px !important;
-      margin: 0 5px;
-    }
-
-    &:hover {
-      border-color: transparent;
-      color: $tigerlily;
-    }
-
-  }
-
 }
 
-hr {
-  border: 1px solid #ccc;
-  clear: both;
-  display: block;
-  margin: 80px 0 40px;
-}
-
-@import "nav";
-@import "content";
-@import "banner";
+@import "header";
+@import "accordion";
+@import "book";
+@import "footer";

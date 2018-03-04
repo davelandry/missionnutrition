@@ -1,0 +1,71 @@
+---
+---
+
+@import "fonts";
+@import "variables";
+@import "vendor";
+@import "reset";
+
+body {
+  color: $grey;
+  font-family: $sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  @include transition(border-color 0.25s);
+  border-bottom: 2px solid transparent;
+  color: $tigerlily;
+  text-decoration: none;
+  vertical-align: bottom;
+
+  &.anchor {
+    position: relative;
+    top: -100px;
+  }
+
+  &.right {
+    float: right;
+  }
+
+  &:hover {
+    border-color: $tigerlily;
+    &.active {
+      cursor: pointer;
+    }
+  }
+
+  i {
+    font-size: 11px !important;
+    margin-top: 5px;
+  }
+
+  &.social {
+    @include transition(color 0.1s);
+    color: $grey;
+    display: inline-block;
+
+    i {
+      font-size: 14px !important;
+      margin: 0 5px;
+    }
+
+    &:hover {
+      border-color: transparent;
+      color: $tigerlily;
+    }
+
+  }
+
+}
+
+hr {
+  border: 1px solid #ccc;
+  clear: both;
+  display: block;
+  margin: 80px 0 40px;
+}
+
+@import "nav";
+@import "content";
+@import "banner";

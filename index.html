@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: base
 ---
 
 <div class="header parallax-window" data-parallax="scroll" data-image-src="/images/header.jpg" data-speed="0.25"></div>
@@ -15,7 +15,7 @@ layout: simple
   </p>
 
   <div class="accordion">
-    {% assign services = (site.services | sort: "order") %}
+    {% assign services = site.services | sort: "order" %}
     {% for service in services %}
 
     <div id="{{ service.path | replace: '_services/', '' | replace: '.md', '' }}" class="bellow{% if service.open %} active{% endif %}">

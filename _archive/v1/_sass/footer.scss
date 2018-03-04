@@ -1,0 +1,48 @@
+footer {
+  @include box();
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+
+  a {
+    @include transition(border-color 0.25s);
+    border-bottom: 1px solid transparent;
+    color: $tigerlily;
+    text-decoration: none;
+    vertical-align: bottom;
+
+    &:hover {
+      border-color: $tigerlily;
+      &.active {
+        cursor: pointer;
+      }
+    }
+
+    i {
+      font-size: 11px !important;
+      margin-top: 5px;
+    }
+
+    &.social {
+      @include transition(color 0.1s);
+      color: $grey;
+      display: inline-block;
+
+      i {
+        font-size: 14px !important;
+        margin: 0 5px;
+      }
+
+      &:hover {
+        border-color: transparent;
+        color: $tigerlily;
+      }
+
+    }
+
+  }
+
+}

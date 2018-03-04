@@ -1,0 +1,63 @@
+$height: 850px;
+
+header, .header {
+  height: $height;
+}
+
+header {
+  @include flex;
+  @include flex-direction(column);
+  @include align-items(center);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  .login {
+    @include text-shadow(0 2px 10px rgba(0, 0, 0, 1));
+    @include transition(border-color 0.25s, opacity 0.25s);
+    border-bottom: 1px solid transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0.75;
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 15px;
+    vertical-align: bottom;
+
+    &:hover {
+      border-color: $grey;
+      opacity: 1;
+      &.active {
+        cursor: pointer;
+      }
+    }
+
+    i {
+      font-size: 11px !important;
+      margin-top: 5px;
+    }
+
+  }
+
+  #logo {
+    margin-top: -30px;
+    width: 350px;
+  }
+
+  #tagline {
+    @include text-shadow(0 2px 10px rgba(0, 0, 0, 1));
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+}
