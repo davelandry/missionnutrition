@@ -6,9 +6,9 @@ order: 2
 open: false
 ---
 
-Find your strengths and build motivation to reach your health goals with:
+Find your strengths, create accountability, and build motivation to reach your health goals:
 
-* 1, 60 minute session
-* 1, 30 minute session
+* Up to 60 minutes/month with Melissa by phone or video chat
 * 1 tailored meal plan
 * 1 month unlimited mobile coaching
+* Food diary feedback access
