@@ -11,9 +11,8 @@
     <!-- Facebook Properties -->
     <meta property="og:image" content="/images/logo-square.jpg" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Mission Nutrition{% if page.title %} | {{ page.title }}{% endif %}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Health Coaching with a Registered Dietitian{% endif %} | Mission Nutrition" />
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}We are Registered Dietitians who deliver innovative nutrition services 100% online: we meet you where you are, when you are ready. Book now to learn what you are capable of with us by your side. We can’t wait to get started!{% endif %}" />
-    <meta property="fb:admins" content="USER_ID" />
 
     <title>{% if page.title %}{{ page.title }}{% else %}Health Coaching with a Registered Dietitian{% endif %} | Mission Nutrition</title>
 
@@ -23,6 +22,9 @@
 
     <script src="/js/jquery-2.2.2.min.js"></script>
     <script src="/js/parallax.min.js"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 
   </head>
   <body class="{{ page.title }}">
