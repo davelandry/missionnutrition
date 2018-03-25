@@ -77,7 +77,6 @@ layout: base
 
   $(document).on("click", "a.scroll", function(event) {
     event.preventDefault();
-    console.log("click");
     var section = $('[name="' + $.attr(this, 'href').substr(1) + '"]');
     if ($(section[0].parentNode.parentNode.parentNode).hasClass("bellow")) {
       $(section[0].parentNode.parentNode.parentNode.parentNode).find(".bellow").removeClass("active");
