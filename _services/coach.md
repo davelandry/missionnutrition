@@ -5,10 +5,11 @@ per: /month
 order: 2
 open: false
 ---
+Find strengths, create accountability, and build motivation:
 
-Find your strengths, create accountability, and build motivation to reach your health goals:
+* 60 minutes/month coaching with Melissa<br />
+* Tailored meal plan and wellness library
+* Fitbit integration plus unlimited mobile coaching
+* Access to monthly group webinars 
 
-* Up to 60 minutes/month with Melissa<br />by phone or video chat
-* 1 tailored meal plan
-* 1 month unlimited mobile coaching
-* Food diary feedback access
+Packages may be customized during Free Strategy Sessions.
