@@ -84,6 +84,7 @@ button, .button, input[type="submit"] {
   @include transition(background-color 0.1s);
   background-color: $tigerlily;
   border: 0;
+  border-radius: 0;
   color: lighten($tigerlily, 40);
   display: inline-block;
   font-size: 19px;
@@ -95,6 +96,7 @@ button, .button, input[type="submit"] {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-appearance: none;
 
   &:hover {
     background-color: darken($tigerlily, 10);
