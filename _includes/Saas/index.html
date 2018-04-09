@@ -36,6 +36,7 @@
       <th>
         <i class="fa fa-{{ service.icon }} fa-3x service-icon"></i>
         {{ service.title }}
+        <div class="price">{{ service.cost }}{% if service.per %}<sub>{{ service.per }}</sub>{% endif %}</div>
         <div class="description">{{ service }}</div>
       </th>
     </thead>
