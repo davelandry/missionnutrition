@@ -1,8 +1,7 @@
 #Overlay {
-  @include transition(opacity 0.1s, visibility 0.1s);
   align-items: center;
   bottom: 0;
-  display: flex;
+  display: none;
   height: 100vh;
   justify-content: center;
   left: 0;
@@ -13,6 +12,7 @@
   visibility: hidden;
   width: 100%;
   &.active {
+    display: flex;
     opacity: 1;
     visibility: visible;
   }
