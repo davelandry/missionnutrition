@@ -1,0 +1,115 @@
+#Saas {
+  @include box();
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+
+  @media screen and (max-width: 720px) {
+    padding: 25px;
+  }
+
+  table {
+    @include box();
+    @include shadow($shadow);
+    background-color: white;
+    border-radius: 3px;
+    color: $grey;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+
+    @media screen and (max-width: 900px) {
+      &.desktop {
+        display: none;
+      }
+    }
+
+    thead, tbody {
+      display: block;
+      padding: 10px 0;
+      width: 100%;
+    }
+
+    tr {
+      display: flex;
+      padding: 0 10px;
+      &.row {
+        border-top: 1px solid #eee;
+      }
+      th {
+        font-size: 18px;
+        font-weight: 300;
+        .service-icon {
+          color: $mimosa;
+          display: block;
+          margin: 10px auto;
+        }
+        .price {
+          color: $emerald;
+          font-size: 24px;
+          font-weight: 800;
+          margin-top: 10px;
+          text-align: center;
+        }
+        .description {
+          font-size: 16px;
+          margin: 10px auto 0;
+          max-width: 300px;
+          padding-top: 0;
+          text-align: left;
+          p {
+            margin: 0;
+          }
+        }
+      }
+      th, td {
+        flex: 1;
+        padding: 10px;
+        &.icon {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+        }
+        &.label {
+          flex: none;
+          text-align: left;
+          width: 150px;
+        }
+        button, .button {
+          width: 100%;
+        }
+        .true {
+          color: $emerald;
+          margin: 0 10px;
+        }
+        .false {
+          color: #ccc;
+        }
+      }
+    }
+    &.mobile {
+      display: none;
+      margin-bottom: 50px;
+      max-width: 500px;
+
+      @media screen and (max-width: 900px) {
+        &.mobile {
+          display: block;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .description {
+        text-align: center;
+      }
+
+      .icon {
+        justify-content: flex-start;
+      }
+
+    }
+  }
+}

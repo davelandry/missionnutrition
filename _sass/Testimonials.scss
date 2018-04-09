@@ -1,0 +1,71 @@
+$arrow: 25px;
+
+#Testimonials {
+  display: inline-block;
+  max-width: 380px;
+  padding: 50px;
+  width: 100%;
+
+  @media screen and (max-width: 720px) {
+    padding: 25px;
+  }
+
+  .testimonial {
+    background-color: $emerald;
+    color: white;
+    margin-bottom: $arrow + 25px;
+    padding: 20px 25px;
+    position: relative;
+    p {
+      margin: 0;
+    }
+    .quote p {
+      &:before, &:after {
+        font-size: 32px;
+        line-height: 0.1em;
+        opacity: 0.5;
+        vertical-align: middle;
+      }
+      &:before {
+        content: "\201c";
+        margin-left: -12px;
+      }
+      &:after {
+        content: "\201d";
+        margin-left: 2px;
+      }
+    }
+    .patient {
+      @include box();
+      font-size: 13px;
+      font-style: italic;
+      margin-top: 5px;
+      text-align: right;
+      width: 100%;
+      &:before {
+        content: "\2014";
+        margin-right: 5px;
+      }
+    }
+    &:after {
+    	border-top: $arrow solid $emerald;
+      bottom: -$arrow;
+      content: "";
+    	height: 0;
+      position: absolute;
+    	width: 0;
+    }
+    &:nth-child(even):after {
+    	border-right: $arrow solid transparent;
+      left: $arrow * 2;
+    }
+    &:nth-child(odd):after {
+    	border-left: $arrow solid transparent;
+      right: $arrow * 2;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}

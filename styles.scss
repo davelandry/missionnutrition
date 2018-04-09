@@ -2,43 +2,31 @@
 ---
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Pacifico');
-@import "colors";
 @import "vendor";
 @import "reset";
 
+$mimosa: #fadc94;
+$emerald: #009b77;
+$tigerlily: #e15d44;
+$grey: #373026;
+$border: #e7e7e7;
+
+$shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+
+$sans-serif: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$serif: "Pacifico", "Times", serif;
+
 body {
+  background-color: #e8e4da;
   color: $grey;
   font-family: $sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
   min-height: 100vh;
-}
-
-.parallax-window {
-  background: transparent;
-  min-height: 190px;
-  overflow: hidden;
-  position: relative;
-
-  @media screen and (max-width: 415px) {
-    min-height: 107px;
+  &.locked {
+    overflow: hidden;
   }
-
-}
-
-.parallax-mirror {
-  // opacity: 0.25;
-  &:after {
-    background-color: rgba(0, 0, 0, 0.3);
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-}
-
-.parallax-slider {
-  @include blur(2);
 }
 
 h2 {
@@ -62,29 +50,70 @@ h3 {
   text-align: center;
 }
 
+a {
+  @include transition(border-color 0.25s);
+  border-bottom: 1px solid transparent;
+  color: $tigerlily;
+  text-decoration: none;
+  vertical-align: bottom;
+
+  &:hover {
+    border-color: $tigerlily;
+  }
+
+}
+
 p {
-  font-size: 15px;
+  margin: 10px 0;
+}
+
+ul, ol {
+  li {
+    margin-left: 25px;
+  }
+}
+
+table {
+  font-size: 14px;
   font-weight: 300;
   line-height: 20px;
 }
 
-.button {
+button, .button, input[type="submit"] {
   @include box();
-  @include shadow($shadow);
   @include transition(background-color 0.1s);
-  background-color: $emerald;
-  color: white;
+  background-color: $tigerlily;
+  border: 0;
+  color: lighten($tigerlily, 40);
   display: inline-block;
-  margin: 10px 5px;
-  padding: 10px 13px 11px;
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 27px;
+  outline: 0;
+  padding: 10px 17px 11px;
+  text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:hover {
-    background-color: lighten($emerald, 1);
+    background-color: darken($tigerlily, 10);
+    cursor: pointer;
   }
 }
 
+content {
+  @include flex();
+  @include flex-direction(row);
+  @include flex-wrap();
+}
+
 @import "header";
-@import "accordion";
-@import "book";
 @import "footer";
+
+@import "Nav";
+@import "Overlay";
+@import "Bio";
+@import "Testimonials";
+@import "Saas";
+@import "LeadGen";

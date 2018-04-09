@@ -1,0 +1,43 @@
+<section id="LeadGen">
+
+  <h3>
+    Never miss a beet.
+  </h3>
+
+  <form class="leadgen" action="" target="_self">
+
+    <p>
+      Join the mailing list and get updates, promotions, and free meal plans from Coach Melissa at Mission Nutrition.
+    </p>
+
+    <input type="email" class="" autocomplete="email" name="emailAddress" value="" dir="auto" placeholder="E-mail Address" />
+    <input type="submit" name="submit" value="Submit" id="ss-submit" />
+
+  </form>
+
+  <div id="finish" class="hidden">
+    Thanks for joining the mission.
+  </div>
+
+</section>
+
+<script>
+
+  var leadGenForm = $("form.leadgen");
+  leadGenForm.on("submit", function (e) {
+
+    e.preventDefault();
+
+    $.ajax({
+      dataType: "xml",
+      type: "POST",
+      url: "https://docs.google.com/forms/d/e/1FAIpQLScso4l-weaOXmx048yaWIbYgpW5kDhAM9dS1Ngvxuu4sMKlDA/formResponse",
+      data: leadGenForm.serialize()
+    });
+
+    leadGenForm.addClass("hidden");
+    $("#finish").removeClass("hidden");
+
+  });
+
+</script>

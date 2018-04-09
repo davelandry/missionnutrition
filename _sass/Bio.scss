@@ -1,0 +1,29 @@
+#Bio {
+  display: inline-block;
+  max-width: 420px;
+  padding: 50px;
+  width: 100%;
+
+  @media screen and (max-width: 720px) {
+    padding: 25px;
+  }
+
+  h2 {
+    margin-top: 25px;
+    &:first-child {
+      margin-top: 0;
+    }
+    a {
+      @include transition(color 0.25s);
+      border: 0;
+      font-size: 24px;
+      &:hover {
+        border: 0;
+        color: darken($emerald, 10);
+      }
+      .fa-linkedin {
+        vertical-align: top;
+      }
+    }
+  }
+}

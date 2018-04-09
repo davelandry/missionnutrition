@@ -1,0 +1,65 @@
+<section id="Saas">
+  {% assign services = site.services | sort: "column" %}
+  <table class="desktop">
+    <thead>
+      <th class="label"></th>
+      {% for service in services -%}
+      <th>
+        <i class="fa fa-{{ service.icon }} fa-3x service-icon"></i>
+        {{ service.title }}
+        <div class="price">{{ service.cost }}{% if service.per %}<sub>{{ service.per }}</sub>{% endif %}</div>
+        <div class="description">{{ service }}</div>
+      </th>
+      {% endfor -%}
+    </thead>
+    <tbody>
+      {% for row in site.features %}
+      <tr class="row">
+        <td class="label">{{ row.title }}</td>
+        {% for service in services -%}
+        {% assign available = service[row.id] %}
+        <td class="icon">{% include Saas/Status.html available=available %}</td>
+        {% endfor -%}
+      </tr>
+      {% endfor %}
+      <tr>
+        <td class="label"></td>
+        <td colspan="{{ services | size }}">
+          <a class="button" onClick="bookService(14667)">Book free strategy session</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  {% for service in services -%}
+  <table class="mobile">
+    <thead>
+      <th>
+        <i class="fa fa-{{ service.icon }} fa-3x service-icon"></i>
+        {{ service.title }}
+        <div class="description">{{ service }}</div>
+      </th>
+    </thead>
+    <tbody>
+      {% for row in site.features %}
+      {% assign available = service[row.id] %}
+      {% if available %}
+      <tr class="row">
+        <td class="icon">{% include Saas/Status.html available=available %} {{ row.title }}</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+      <tr>
+        <td>
+          <a class="button" target="_blank" href="https://gethealthie.com/appointments/embed_appt?dietitian_id=560&immediate_purchase=true&require_offering=true&offering_id=14667">
+            {% if forloop.index0 == 0 %}
+            Subscribe
+            {% else %}
+            Book free strategy session
+            {% endif %}
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  {% endfor -%}
+</section>

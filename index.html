@@ -2,96 +2,41 @@
 layout: base
 ---
 
-<div class="header parallax-window" data-parallax="scroll" data-image-src="/images/header.jpg" data-speed="0.25"></div>
+{% include Nav.html %}
+
+<div class="header parallax-window desktop" data-parallax="scroll" data-image-src="/images/billboard.jpg" data-speed="0.25"></div>
+<div class="header parallax-window mobile" data-parallax="scroll" data-image-src="/images/billboard-mobile.jpg" data-speed="0.25"></div>
 
 <header>
 
-  <a class="login" href="https://gethealthie.com/users/sign_in.html">Customer Log In</a>
+  <div class="top">
+    <img id="logo" src="/images/logo-light-shadow.png" alt="Mission Nutrition" />
+    <p id="tagline">
+      Health Coaching with a Registered Dietitian.<br />
+      Feel better. Enjoy Food.
+    </p>
+  </div>
 
-  <img id="logo" src="/images/logo-light-shadow.png" alt="Mission Nutrition" />
-  <p id="tagline">
-    Health Coaching with a Registered Dietitian.<br />
-    Feel better. Enjoy Food.
-  </p>
+  <div class="bottom">
+    <a class="button scroll" href="#Saas">Work with Melissa</a>
 
-  <div class="accordion">
-    {% assign services = site.services | sort: "order" %}
-    {% for service in services %}
-
-    <div id="{{ service.path | replace: '_services/', '' | replace: '.md', '' }}" class="bellow{% if service.open %} active{% endif %}">
-      <div class="small-title">
-        {{ service.title }}
-      </div>
-      <div class="content">
-        <h2><a class="title scroll" name="{{ service.id }}" href="#{{ service.id }}">{{ service.title }}</a></h2>
-        <div class="price">
-          {{ service.cost }}<span class="duration{% if service.per.size > 10 %} small{% endif %}">{{ service.per }}</span>
-        </div>
-        {{ service }}
-        <a class="button scroll" href="#book">Free Strategy Session</a>
-      </div>
+    <div class="icons">
+      <a target="_blank" class="social" href="https://www.facebook.com/missionnutritionboston"><i class="fab fa-facebook"></i></a>
+      <a target="_blank" class="social" href="https://instagram.com/missionnutritionboston/"><i class="fab fa-instagram"></i></a>
+      <a target="_blank" class="social" href="https://www.pinterest.com/missionnut/pins/"><i class="fab fa-pinterest-square"></i></a>
     </div>
-
-    {% endfor %}
-
   </div>
 
 </header>
 
-<section id="book">
+<content>
 
-  <h2><a class="title scroll" name="book" href="#book">Services and Pricing</a></h2>
+  {% include Bio.html %}
 
-  <div class="flex">
+  {% include Testimonials.html %}
 
-    <div id="melissa">
-      <img src="/images/melissa.jpg" alt="Melissa" />
-      <p>Hi There! I'm Melissa of Mission Nutrition.</p>
-      <p>If you're motivated toward a vision of the healthiest-you-ever, you're in luck!</p>
-      <p>Health coaching works to create habits you can follow for good.</p>
-        <p>And working with me means taking the credibility of a Registered Dietitian plus Certified Health & Wellness Coach wherever you go through easy-to-access virtual services. Choose from tailored meal plans, in-app tracking, messaging support, and intensive 1:1 goal setting so you can realize your vision in the ways that work best for you. </p>
-      <p> No matter which path you choose, I am your partner-in-dine (get it?) offering humor and perspective along the way. <a href="https://docs.google.com/forms/d/e/1FAIpQLSewgjQfOO-zYVikz-oCMtEjnkamAQTEweTuT8F00rGyEoKEFA/viewform">Contact me</a> for your free 15 minute strategy session and we'll spend some time designing you the best. plan. ever. <p>That's the mission: <strong>feel better. enjoy food.</strong>
-      </p>
-      <p>Here's to you,</p>
-      <h2 class="signature">Melissa</h2>
-      <p>Melissa Gallagher Landry, MEd, RD, LDN, CHWC</p>
+  {% include Saas/index.html %}
 
-      <div class="links">
-        <a target="_blank" class="social" href="https://www.linkedin.com/profile/view?id=AAkAAALoRFMBDLl3t4MO2V0KuQX5FKUklVKOjME"><i class="fab fa-linkedin"></i></a>
-        <a target="_blank" class="social" href="https://www.facebook.com/missionnutritionboston"><i class="fab fa-facebook"></i></a>
-        <a target="_blank" class="social" href="https://instagram.com/missionnutritionboston/"><i class="fab fa-instagram"></i></a>
-        <a target="_blank" class="social" href="https://www.pinterest.com/missionnut/pins/"><i class="fab fa-pinterest-square"></i></a>
-        <a target="_blank" class="social" href="https://medium.com/@missionnutritionboston"><i class="fab fa-medium"></i></a>
-      </div>
-    </div>
+  {% include LeadGen.html %}
 
-    <div id="iframe">
-      <iframe src="https://gethealthie.com/offerings/embeddable_offerings?user_id=560&immediate_purchase=true&is_group=false"></iframe>
-    </div>
-
-  </div>
-
-</section>
-
-<script>
-
-  $(document).on("click", "a.scroll", function(event) {
-    event.preventDefault();
-    var section = $('[name="' + $.attr(this, 'href').substr(1) + '"]');
-    if ($(section[0].parentNode.parentNode.parentNode).hasClass("bellow")) {
-      $(section[0].parentNode.parentNode.parentNode.parentNode).find(".bellow").removeClass("active");
-      $(section[0].parentNode.parentNode.parentNode).addClass("active");
-    }
-    else {
-      $("html, body").animate({scrollTop: section.offset().top}, 500);
-    }
-  });
-
-  $(document).on("click", ".bellow", function(event) {
-    event.preventDefault();
-    var section = $('[name="' + $(this).find(".title").attr("href").substr(1) + '"]');
-    $(this.parentNode).find(".bellow").removeClass("active");
-    $(this).addClass("active");
-  });
-
-</script>
+</content>

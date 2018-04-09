@@ -3,6 +3,7 @@
   <head>
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="author" content="Mission Nutrition" />
     <meta name="description" content="Work with Coach Melissa, Registered Dietitian and Certified Health Coach, to feel better and enjoy food. Reach your general health and weight loss goals with choice of flexible meal plans, mobile chat, and real time virtual coaching services." />
@@ -23,8 +24,7 @@
     <script src="/js/jquery-2.2.2.min.js"></script>
     <script src="/js/parallax.min.js"></script>
 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 
   </head>
   <body class="{{ page.title }}">
@@ -33,15 +33,41 @@
 
     <footer>
 
-      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSewgjQfOO-zYVikz-oCMtEjnkamAQTEweTuT8F00rGyEoKEFA/viewform">Contact</a> - (617) 564-1459
-      <br />
-      Background photo by <a href="https://flic.kr/p/grmZLz" target="_blank">Sonny Abesamis</a>
+      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSewgjQfOO-zYVikz-oCMtEjnkamAQTEweTuT8F00rGyEoKEFA/viewform">Contact Form</a> - (617) 564-1459
       <br />
       &copy; {{ site.time | date: '%Y' }} Mission Nutrition. All rights reserved.
 
     </footer>
 
+    <div id="Overlay">
+      <div id="Backdrop"></div>
+      <div id="Modal">
+        <iframe id="iframe"></iframe>
+        <div id="Close">
+          <i class="fa fa-times-circle fa-lg"></i>
+        </div>
+      </div>
+    </div>
+
     <script>
+
+      $(document).on("click", "a.scroll", function(event) {
+        event.preventDefault();
+        var section = $($.attr(this, "href"));
+        $("html, body").animate({scrollTop: section.offset().top}, 1000);
+      });
+
+      function bookService(id) {
+        $("#iframe").attr("src", "https://gethealthie.com/appointments/embed_appt?dietitian_id=560&immediate_purchase=true&require_offering=true&offering_id=" + id);
+        $("#Overlay").addClass("active");
+        $("body").addClass("locked");
+      }
+
+      $("#Close, #Backdrop").on("click", function(event) {
+        event.preventDefault();
+        $("#Overlay").removeClass("active");
+        $("body").removeClass("locked");
+      });
 
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

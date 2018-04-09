@@ -1,3 +1,23 @@
+features:
+  - id: knowledgebase
+    title: Knowledgebase
+  - id: tracking
+    title: Fitbit Tracking
+  - id: tailored
+    title: Meal Plan w/ Updates
+  - id: feedback
+    title: Expert Feedback
+  - id: mobile
+    title: Text with Melissa
+  - id: webinars
+    title: Member Webinars
+  - id: vision
+    title: Vision and Goals Design
+  - id: meet
+    title: Meet with Melissa
+
 collections:
+  testimonials:
+    output: false
   services:
     output: false
