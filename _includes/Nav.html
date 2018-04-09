@@ -9,7 +9,7 @@
 <script>
 
   window.onscroll = function() {
-    $("#Nav").toggleClass("filled", window.scrollY > 90);
+    $("#Nav").toggleClass("filled", window.innerWidth <= 720 ? window.scrollY > 0 : window.scrollY > 90);
   }
 
 </script>
