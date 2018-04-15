@@ -6,7 +6,8 @@ cost: $49
 per: /month
 icon: map
 
-id: 1477
+healthie: 1477
+action: Subscribe
 
 knowledgebase: true
 tracking: true

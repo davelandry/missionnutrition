@@ -4,7 +4,7 @@
   text-align: center;
   width: 100%;
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 970px) {
     padding: 25px;
   }
 
@@ -18,7 +18,7 @@
     max-width: 1000px;
     width: 100%;
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 970px) {
       &.desktop {
         display: none;
       }
@@ -26,19 +26,23 @@
 
     thead, tbody {
       display: block;
-      padding: 10px 0;
+      padding: 2px 0;
       width: 100%;
     }
 
     tr {
       display: flex;
-      padding: 0 10px;
+      padding: 0;
       &.row {
         border-top: 1px solid #eee;
+        &:first-child {
+          border-top: 0;
+        }
       }
       th {
         font-size: 18px;
         font-weight: 300;
+        padding: 10px 10px 0;
         .service-icon {
           color: $mimosa;
           display: block;
@@ -62,9 +66,11 @@
           }
         }
       }
+      td {
+        padding: 10px;
+      }
       th, td {
         flex: 1;
-        padding: 10px;
         &.icon {
           align-items: center;
           display: flex;
@@ -76,6 +82,7 @@
           width: 150px;
         }
         button, .button {
+          margin: 10px 0 0;
           width: 100%;
         }
         .true {
@@ -92,7 +99,7 @@
       margin-bottom: 50px;
       max-width: 500px;
 
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 970px) {
         &.mobile {
           display: block;
         }

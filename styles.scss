@@ -69,7 +69,7 @@ p {
 
 ul, ol {
   li {
-    margin-left: 25px;
+    margin: 0 25px;
   }
 }
 
@@ -81,18 +81,19 @@ table {
 
 button, .button, input[type="submit"] {
   @include box();
+  @include shadow($shadow);
   @include transition(background-color 0.1s);
   background-color: $tigerlily;
   border: 0;
   border-radius: 0;
   color: lighten($tigerlily, 40);
   display: inline-block;
-  font-size: 19px;
-  font-weight: 900;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 1px;
   line-height: 27px;
   outline: 0;
-  padding: 10px 17px 11px;
+  padding: 10px 12px 11px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;

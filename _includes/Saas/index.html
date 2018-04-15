@@ -13,6 +13,16 @@
       {% endfor -%}
     </thead>
     <tbody>
+      <tr>
+        <td class="label"></td>
+        {% for service in services -%}
+        <td>
+          <a class="button" onClick="bookService({{ service.healthie }})">
+            {{ service.action }}
+          </a>
+        </td>
+        {% endfor -%}
+      </tr>
       {% for row in site.features %}
       <tr class="row">
         <td class="label">{{ row.title }}</td>
@@ -22,12 +32,6 @@
         {% endfor -%}
       </tr>
       {% endfor %}
-      <tr>
-        <td class="label"></td>
-        <td colspan="{{ services | size }}">
-          <a class="button" onClick="bookService(14667)">Book free strategy session</a>
-        </td>
-      </tr>
     </tbody>
   </table>
   {% for service in services -%}
@@ -38,6 +42,9 @@
         {{ service.title }}
         <div class="price">{{ service.cost }}{% if service.per %}<sub>{{ service.per }}</sub>{% endif %}</div>
         <div class="description">{{ service }}</div>
+        <a class="button" target="_blank" href="https://gethealthie.com/appointments/embed_appt?dietitian_id=560&immediate_checkout=true&require_offering=true&offering_id={{ service.healthie }}">
+          {{ service.action }}
+        </a>
       </th>
     </thead>
     <tbody>
@@ -49,17 +56,6 @@
       </tr>
       {% endif %}
       {% endfor %}
-      <tr>
-        <td>
-          <a class="button" target="_blank" href="https://gethealthie.com/appointments/embed_appt?dietitian_id=560&immediate_purchase=true&require_offering=true&offering_id=14667">
-            {% if forloop.index0 == 0 %}
-            Subscribe
-            {% else %}
-            Book free strategy session
-            {% endif %}
-          </a>
-        </td>
-      </tr>
     </tbody>
   </table>
   {% endfor -%}

@@ -5,7 +5,8 @@ column: 1
 cost: Always Free
 icon: pencil-alt
 
-id: 14667
+healthie: 15382
+action: Subscribe
 
 knowledgebase: true
 tracking: true

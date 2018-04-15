@@ -6,7 +6,8 @@ cost: $99
 per: /month
 icon: trophy
 
-id: 189
+healthie: 14667
+action: Free Strategy Session
 
 knowledgebase: true
 tracking: true
