@@ -1,14 +1,16 @@
 features:
-  - id: knowledgebase
-    title: Knowledgebase
+  - id: tips
+    title: Premium Health<span class='break'></span>Resources and Tips
   - id: tracking
-    title: Fitbit Tracking
+    title: "Diet Tracking<span class='break'></span><sub>w/ Fitbit Integration</sub>"
+  - id: seasonal
+    title: Seasonal<span class='break'></span>Meal Plans
   - id: tailored
-    title: Meal Plan w/ Updates
+    title: Personalized<span class='break'></span>Meal Planning
   - id: feedback
-    title: Expert Feedback
+    title: Diet Tracking Review
   - id: mobile
-    title: Text with Melissa
+    title: Mobile Chat<span class='break'></span>with Melissa
   - id: webinars
     title: Member Webinars
   - id: vision

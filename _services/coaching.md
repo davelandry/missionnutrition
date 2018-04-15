@@ -9,8 +9,9 @@ icon: trophy
 healthie: 14667
 action: Free Strategy Session
 
-knowledgebase: true
+tips: true
 tracking: true
+seasonal: true
 tailored: true
 feedback: true
 mobile: true

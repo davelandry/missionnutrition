@@ -9,8 +9,9 @@ icon: map
 healthie: 1477
 action: Subscribe
 
-knowledgebase: true
+tips: true
 tracking: true
+seasonal: true
 tailored: true
 feedback: true
 mobile: true

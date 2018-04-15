@@ -18,6 +18,17 @@
     max-width: 1000px;
     width: 100%;
 
+    .break {
+      display: inline-block;
+      width: 3px;
+    }
+
+    &.desktop {
+      .break {
+        display: block;
+      }
+    }
+
     @media screen and (max-width: 970px) {
       &.desktop {
         display: none;
@@ -31,10 +42,13 @@
     }
 
     tr {
+      align-items: flex-start;
       display: flex;
       padding: 0;
       &.row {
+        align-items: center;
         border-top: 1px solid #eee;
+        min-height: 61px;
         &:first-child {
           border-top: 0;
         }
@@ -115,6 +129,7 @@
 
       .icon {
         justify-content: flex-start;
+        text-align: left;
       }
 
     }
