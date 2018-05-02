@@ -2,7 +2,7 @@
 title: Meal Planning with Melissa
 column: 2
 
-cost: $49
+cost: $59
 per: /month
 icon: map
 
