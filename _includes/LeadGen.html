@@ -4,14 +4,17 @@
     Never miss a beet.
   </h3>
 
-  <form class="leadgen" action="" target="_self">
+  <form class="leadgen" action="https://missionnutritionboston.us12.list-manage.com/subscribe/post?u=e8a1e0979b82b6de6ce9188ea&amp;id=b5c076e23b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate target="_blank">
 
     <p>
       Join the mailing list and get updates, promotions, and free meal plans from Coach Melissa at Mission Nutrition.
     </p>
 
-    <input type="email" class="" autocomplete="email" name="emailAddress" value="" dir="auto" placeholder="E-mail Address" />
-    <input type="submit" name="submit" value="Submit" id="ss-submit" />
+    <input type="email" placeholder="E-mail Address" autocapitalize="off" autocomplete="email" autocorrect="off" name="EMAIL" id="mce-EMAIL" value="" />
+    <input type="text" placeholder="First Name" autocomplete="given-name" name="FNAME" id="mce-FNAME" value="" />
+    <input type="text" placeholder="Last Name" autocomplete="family-name" name="LNAME" id="mce-LNAME" value="" />
+
+    <input type="submit" class="formEmailButton" name="submit" value="Submit">
 
   </form>
 
@@ -23,21 +26,21 @@
 
 <script>
 
-  var leadGenForm = $("form.leadgen");
-  leadGenForm.on("submit", function (e) {
-
-    e.preventDefault();
-
-    $.ajax({
-      dataType: "xml",
-      type: "POST",
-      url: "https://docs.google.com/forms/d/e/1FAIpQLScso4l-weaOXmx048yaWIbYgpW5kDhAM9dS1Ngvxuu4sMKlDA/formResponse",
-      data: leadGenForm.serialize()
-    });
-
-    leadGenForm.addClass("hidden");
-    $("#finish").removeClass("hidden");
-
-  });
+  // var leadGenForm = $("form.leadgen");
+  // leadGenForm.on("submit", function (e) {
+  //
+  //   // e.preventDefault();
+  //   //
+  //   // $.ajax({
+  //   //   dataType: "xml",
+  //   //   type: "POST",
+  //   //   url: "https://missionnutritionboston.us12.list-manage.com/subscribe/post",
+  //   //   data: leadGenForm.serialize()
+  //   // });
+  //
+  //   leadGenForm.addClass("hidden");
+  //   $("#finish").removeClass("hidden");
+  //
+  // });
 
 </script>
