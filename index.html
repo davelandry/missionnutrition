@@ -40,3 +40,13 @@ layout: base
   {% include LeadGen.html %}
 
 </content>
+
+{% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
+{% for promo in site.promos %}
+  {% capture start %}{{ promo.start | date: '%s' }}{% endcapture %}
+  {% capture end %}{{ promo.end | date: '%s' }}{% endcapture %}
+  {% if start < nowunix and end > nowunix %}
+    {% include Banner.html text=promo.text link=promo.link button=promo.button %}
+    {% break %}
+  {% endif %}
+{% endfor %}

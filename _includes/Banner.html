@@ -1,0 +1,21 @@
+<div id="Banner">
+
+  <p class="text desktop">{{include.text}}</p>
+  <a class="text mobile" href="{{include.link}}" target="_blank">{{include.text}}</a>
+  <a class="button desktop" href="{{include.link}}" target="_blank">{{include.button}}</a>
+  <div class="desktop" id="Banner-Close"><i class="fas fa-times"></i></div>
+
+</div>
+
+<script>
+
+  var startup = 1000;
+  setTimeout(function() {
+    $("#Banner").addClass("visible");
+  }, startup);
+
+  $("#Banner-Close").click(function() {
+    $("#Banner").removeClass("visible");
+  });
+
+</script>

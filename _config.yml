@@ -19,6 +19,8 @@ features:
     title: Meet with Melissa
 
 collections:
+  promos:
+    output: false
   testimonials:
     output: false
   services:
